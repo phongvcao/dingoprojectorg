@@ -1,0 +1,37 @@
+- DONE: Create download_archives.html (YES WE CAN!):
+
+- DONE: Create download_development.html (DONE!)
+ 
+- DONE: Create a section called new functionalities for those
+  releases that have micro == 0
+
+- DONE: Go to all *.html files and add the closing "</div>" to 
+  the end of the content section right bfore the {% endblock %} 
+  of {% block content %}
+  
+- DONE: Make the three boxes at the bottom of home showing pointer 
+  and navigate to pages when clicking
+
+- DONE: Homepage slideshow auto-hides forward & backward buttons.
+  When hovering over they appear but a little transparent.
+  
+- DONE: Factor *.html files into relevant folders
+
+- DONE: Resize all images used in download_archives.html
+
+- Create about_features.html
+- Create screenshots.html
+- Create sitemap at bottom of base.html
+
+
+- Create IDs for all headers in all html files
+
+- Finish packing packages & upload to all necessary websites
+- Deploy Django & this website on Hostgator.com (first try out
+  their cheapest package & shortest time)
+- Edit all "#" links in .html files to the working ones
+- Edit Dingo's homepage address on SourceForge.net and Github
+
+- Implement Ajax
+
+- Add Google Analytics <script> and webmaster before releasing.

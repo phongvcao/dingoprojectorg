@@ -1,0 +1,30 @@
+.download-button {
+  display: inline-block;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+  width: 64px;
+  height: 80px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.download-button:hover {
+  background-color: #fbfbfb;
+  border-color: #558a35;
+  cursor: pointer;
+}
+
+.download-button-hover {
+  background-color: #fbfbfb;
+  border-color: #558a35;
+  cursor: pointer;
+}
+
+.distro-details {
+  display: none;
+}
+
+#install-ubuntu img {
+  cursor: pointer;
+}

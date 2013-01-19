@@ -1,0 +1,54 @@
+{% extends "help/help_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Help{% endblock %}
+
+{% block libs %}{% endblock %}
+
+{% block content %}
+  <div id="content">
+    <p class="text-content" style="padding-top:35px; margin-bottom:-10px;">
+      Dingo is a free/open-source project and its users rely on the community to get solutions for their problems. It is important that members of the community be clear, concise and respectful to others at all time.
+    </p>
+  
+    {# FAQ #}
+    <h3 class="sub-header" id="report-bugs">
+      FAQ
+    </h3>
+  
+    <p class="text-content">
+      We have constructed <a href="http://127.0.0.1:8000/help/faq" class="doc-link">a list of frequently asked questions</a> with their answers. Please refer to it before asking about any issue to respect others' time.
+    </p>
+  
+    {# Mailing List #}
+    <h3 class="sub-header" id="translate">
+      Mailing List
+    </h3>
+  
+    <p class="text-content">
+      If your questions are not available in the Frequently Asked Questions section, you can search our mailing-list archives and the reported issues list to avoid duplicates. If you still cannot find the answer please email our mailing-list or chat with us (see the next section).
+    
+      <p class="text-content" style="padding-top:10px;">
+        <strong>Search the mailing list archives and the website:</strong>
+        <br />
+        <input type="text" name="email" onclick="this.select();" class="text-content" style="width:325px;" />
+        <input type="submit" name="search-archives-button" value="Search" />
+      </p>
+      
+      <p class="text-content" style="padding-top:15px;">
+        <strong>Search Github issues tracker for reported issues:</strong>
+        <br />
+        <input type="text" name="email" onclick="this.select();" class="text-content" style="width:325px;" />
+        <input type="submit" name="search-issues-button" value="Search" />
+      </p>
+    </p>
+    
+    {# IRC Chat #}
+    <h3 class="sub-header" id="translate">
+      IRC Chat
+    </h3>
+  
+    <p class="text-content">
+      If the above two methods do not work for you, IRC Chat is the fastest way you can get your answers. Just install an IRC Chat client (we recommend <a href="http://www.pidgin.im/" target="_blank" class="doc-link">Pidgin</a> and <a href="http://xchat.org/" target="_blank" class="doc-link">XChat</a>) and join our real-time discussion at <a href="irc://irc.gnome.org/#dingo" target="_blank" class="doc-link">#dingo</a> on <strong><i>irc.gnome.org</i></strong>. If there is anyone available they will immediately reply to your questions.
+    </p>
+  </div>
+{% endblock %}

@@ -1,0 +1,268 @@
+{% extends "base.html" %}
+
+{% block title %}Dingo{% endblock %}
+
+{% block libs %}
+  <script type="text/javascript" src="http://127.0.0.1:8000/static/include/slidesjs/slides.jquery.js"></script>
+{% endblock %}
+
+{% block static %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/home.css" />
+
+  <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/home.js"></script>
+{% endblock %}
+
+{% block content %}
+  <div id="slides">
+    <a href="#" class="slides_left-button">
+      <img src="http://127.0.0.1:8000/static/images/home/left-arrow.png" alt="Left Button" id="left-button">
+    </a>
+      
+    <div class="slides_container">
+      <div class="slides_slide" id="video-playback">
+        <!-- dingo-video-playback.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-video-playback.png">
+        <h1 class="slides_slide-text">
+          A powerful audio/video player
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Dingo Player Engine (GStreamer-based) supports both
+          audio and video in various formats. Fullscreen mode
+          can be rapidly activated through hot-key or the control
+          button.
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+      
+      <div class="slides_slide" id="sound-menu-integration">
+        <!-- dingo-sound-menu-integration.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-sound-menu-integration.png">
+        <h1 class="slides_slide-text">
+          Perfect SoundMenu integration
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Control your playbacks and playlists through the 
+          Unity's SoundMenu
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="tracks-membership-manager">
+        <!-- dingo-tracks-membership-manager.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-tracks-membership-manager.png">
+        <h1 class="slides_slide-text">
+          Checkboxes-based tracks-playlists 
+          manager
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Add or delete tracks to/from multiple playlists using
+          Dingo's checkboxes-based tracks-playlists manager
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="repeat-section">
+        <!-- dingo-repeat-section.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-repeat-section.png">
+        <h1 class="slides_slide-text">
+          Repeat your favorite section
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Like a particular section of the song? Let
+          Dingo's Repeat Section mode replay it for you.
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="edit-single-track">
+        <!-- dingo-edit-single-track.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-edit-single-track.png">
+        <h1 class="slides_slide-text">
+          Edit track's information
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Rapidly navigate through your playlists and
+          edit each track's info
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="edit-all-tracks">
+        <!-- dingo-edit-all-tracks.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-edit-all-tracks.png">
+        <h1 class="slides_slide-text">
+          Massive tracks' information editing
+        </h1>
+            
+        <p class="slides_slide-capture">
+          Set common information for multiple tracks
+          all at once
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="playlist-manager">
+        <!-- dingo-playlist-manager.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-playlist-manager.png">
+        <h1 class="slides_slide-text">
+          Manage your playlists
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Create, import, export, delete and switch to
+          different playlists using Dingo's easy-to-use 
+          playlists manager
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="settings-save-to-file">
+        <!-- dingo-settings-save-to-file.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-settings-save-to-file.png">
+        <h1 class="slides_slide-text">
+          Backup your settings
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Save your preferred settings as default, or create 
+          a backup somewhere for later use
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="lyrics">
+        <!-- dingo-lyrics.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-lyrics.png">
+        <h1 class="slides_slide-text">
+          Lyrics fetching and saving
+        </h1>
+            
+        <p class="slides_slide-capture">
+          Dingo supports reading lyrics from the media files 
+          and saving them inside the database.
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="shuffle">
+        <!-- dingo-shuffle.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-shuffle.png">
+        <h1 class="slides_slide-text">
+          Smart Shuffle 
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Change the listening order of a playlist using Dingo's
+          smart shuffle. Works specially well with Repeat 
+          Playlist.
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="subtitle-font-chooser">
+        <!-- dingo-subtitle-font-chooser.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-subtitle-font-chooser.png">
+        <h1 class="slides_slide-text">
+          Change subtitle's font
+        </h1>
+          
+        <p class="slides_slide-capture">
+          Maximize your movies watching experience by adjusting
+          subtitle's font according to your preference.
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+        
+      <div class="slides_slide" id="subtitle-autosaved">
+        <!-- dingo-subtitle-autosaved.png -->
+        <img src="http://127.0.0.1:8000/static/images/home/dingo-subtitle-autosaved.png">
+        <h1 class="slides_slide-text">
+          Autosave your subtitle's path
+        </h1>
+          
+        <p class="slides_slide-capture">
+          With Dingo you only need to import external subtitle
+          once. The software will automatically remember the
+          subtitle's path and render it every time you open the
+          movie.
+        </p>
+          
+        <a class="slides_download-button" href="http://127.0.0.1:8000/download/">Get Dingo!</a>
+      </div>
+    </div>
+      
+    <a href="#" class="slides_right-button">
+      <img src="http://127.0.0.1:8000/static/images/home/right-arrow.png" alt="Right Button" id="right-button">
+    </a>
+  </div>
+    
+  <div id="quick-access-container">
+    <a href="http://127.0.0.1:8000/about/">
+      <div class="quick-access" id="quick-access-left">
+        <h1 class="quick-access-header">
+          What is Dingo?
+        </h1>
+        
+        <p class="quick-access-text">
+          Dingo is an audio/video manager and player
+          designed for Linux. It supports various media formats and
+          carries powerful features such as repeat section, 
+          checkboxes-based tracks-playlists manager, subtitle 
+          auto-save.
+        </p>
+        
+        <p class="quick-access-link">More about Dingo &rsaquo;&rsaquo;</p>
+      </div>
+    </a>
+    
+    <a href="http://127.0.0.1:8000/download/">
+      <div class="quick-access" id="quick-access-middle">
+        <h1 class="quick-access-header">
+          Your wish is our mission
+        </h1>
+        
+        <p class="quick-access-text">
+          Download Dingo 0.5.1 (latest stable release) today, 
+          delivering powerful media managing and playing features 
+          to your Linux desktop.
+        </p>
+        
+        <p class="quick-access-link">Get Dingo 0.5.1 &rsaquo;&rsaquo;</p>
+      </div>
+    </a>
+    
+    <a href="http://127.0.0.1:8000/contribute/">
+      <div class="quick-access">
+        <h1 class="quick-access-header" id="quick-access-right">
+          Contribute to Dingo
+        </h1>
+        
+        <p class="quick-access-text">
+          Dingo is free and open-source just like many other
+          Linux software, and you are more than welcome to help
+          us make it better regardless of how geeky you are: 
+          developers, designers, translators, normal users, etc...
+          all-in!
+        </p>
+        
+        <p class="quick-access-link">Make Dingo better &rsaquo;&rsaquo;</p>
+      </div>
+    </a>
+  </div>
+{% endblock %}

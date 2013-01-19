@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block static %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/help_base.css" />
+
+  <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/help_base.js"></script>
+  
+  {% if subpage %}
+  <style type="text/css">
+    #subpage-{% if subpage %}{{ subpage }}{% endif %} {
+      color: brown;
+    }
+  </style>
+  {% endif %}
+{% endblock %}
+
+{% block sidebar %}
+  <div id="sidebar">
+    <ul class="list-links">
+      <li><a href="http://127.0.0.1:8000/help/faq" class="doc-link" id="subpage-faq">FAQ</a></li>
+      <li><a href="#" class="doc-link">Mailing List</a></li>
+      <li><a href="irc://irc.gnome.org/#dingo" class="doc-link">IRC Chat</a></li>
+    </ul>
+  </div>
+{% endblock %}

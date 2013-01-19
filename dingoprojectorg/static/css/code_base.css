@@ -1,0 +1,22 @@
+@font-face {
+  font-family: UbuntuMonoRegular;
+  src: url("http://127.0.0.1:8000/static/type/UbuntuMono-R.ttf");
+}
+
+.code-snippet {
+  font-family: UbuntuMonoRegular;
+  font-size: 16px; 
+  line-height: 20px; 
+  margin-top: 5px; 
+  padding-top: 10px; 
+  background-color: #272727; 
+  color: white; 
+  margin-bottom: 15px; 
+  border-color: #dddddd; 
+  border-style: solid;
+}
+
+.text-content-code {
+  font-family: UbuntuMonoRegular;
+  font-size: 16px;
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block static %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/contribute_base.css" />
+
+  <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/contribute_base.js"></script>
+  
+  {% if subpage %}
+  <style type="text/css">
+    #subpage-{% if subpage %}{{ subpage }}{% endif %} {
+      color: brown;
+    }
+  </style>
+  {% endif %}
+{% endblock %}
+
+{% block sidebar %}
+  <div id="sidebar">
+    <ul class="list-links">
+      <li><a href="http://127.0.0.1:8000/contribute/report-bugs" class="doc-link" id="subpage-report-bugs">Report Bugs</a></li>
+      <li><a href="http://127.0.0.1:8000/contribute/translate" class="doc-link" id="subpage-translate">Translate Dingo</a></li>
+      <li><a href="http://127.0.0.1:8000/contribute/design-icons" class="doc-link" id="subpage-design-icons">Design Icons</a></li>
+      <li><a href="http://127.0.0.1:8000/contribute/write-code" class="doc-link" id="subpage-write-code">Write Code</a></li>
+    </ul>
+  </div>
+{% endblock %}

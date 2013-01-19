@@ -1,0 +1,204 @@
+{% extends "help/help_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; FAQ{% endblock %}
+
+{% block libs %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/libs_base.css" />
+{% endblock %}
+
+{% block content %}
+  <div id="content">
+    {# Installation #}
+    <h3 class="sub-header" id="translate">
+      Installation
+    </h3>
+  
+    <p class="text-content">
+      <strong>1. Why isn't Dingo installation package available on my platform?</strong>
+    </p>
+    
+    <p class="text-content">
+      At the moment due to the small amount of maintainers and contributors we only support installation package on the three most popular Linux distribution: <a href="http://www.ubuntu.com/" target="_blank" class="doc-link">Ubuntu</a>, <a href="http://fedoraproject.org/" target="_blank" class="doc-link">Fedora</a> and <a href="http://www.linuxmint.com/" target="_blank" class="doc-link">Linux Mint</a> (which is based upon <a href="http://www.ubuntu.com/" target="_blank" class="doc-link">Ubuntu</a> and can use <a href="http://www.ubuntu.com/" target="_blank" class="doc-link">Ubuntu</a>'s debs).
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+       If Dingo installation package is not yet available on your system you can either <a href="#" class="doc-link">install Dingo from source</a>, send a package-building request email to <a href="#" target="_blank" class="doc-link">our mailing-list</a> or build an installation package for your own system from <a href="#" target="_blank" class="doc-link">our latest source code</a>.
+    </p>
+    
+    <br />
+    
+    <p class="text-content" id="installation-2">
+      <strong>2. What are the required libraries to build Dingo?</strong>
+    </p>
+    
+    <p class="text-content">
+      The libraries required to build Dingo along with their versions can also be found on <a href="http://127.0.0.1:8000/download/development" class="doc-link">our Download page - Development section</a>. Here are what you need to build the currently latest stable release:
+    </p>
+    
+    <p class="text-content">
+      <table class="libs-table">
+        <tr>
+          <td class="lib-name">gtkmm(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">3.4.0</td>
+          <td class="lib-name">gettext</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">0.18.1.1</td>
+        </tr>
+        <tr>
+          <td class="lib-name">gstreamermm(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">0.10.10</td>
+          <td class="lib-name">intltool</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">0.50.2</td>
+        </tr>
+        <tr>
+          <td class="lib-name">libmediainfo(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">0.7.59</td>
+          <td class="lib-name">libnotify(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">0.7.5</td>
+        </tr>
+        <tr>
+          <td class="lib-name">sqlite(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">3.7.11</td>
+          <td class="lib-name">boost-program-options(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">1.48</td>
+        </tr>
+        <tr>
+          <td class="lib-name">libxml++(-dev)</td>
+          <td class="lib-sign">>=</td>
+          <td class="lib-version">2.34.2</td>
+        </tr>
+      </table>
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      <strong>3. Where can I find libmediainfo?</strong>
+    </p>
+    
+    <p class="text-content">
+      If you are using Ubuntu or any Ubuntu-based distro such as Linux Mint, <strong>libmediainfo</strong> should be available on your Software Center. If not you can always add <a href="https://launchpad.net/~shiki/+archive/mediainfo" target="_blank" class="doc-link">the Official MediaInfo PPA</a> into your Software Sources. <strong>OMG! Ubuntu</strong> has an excellent tutorial about <a href="http://www.omgubuntu.co.uk/how-to-add-a-ppa-to-software-sources-in-ubuntu" target="_blank" class="doc-link">How to add a PPA to Software Sources in Ubuntu</a>. Things might look a little different in your system but they should be somewhat similar.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      With Fedora we distribute <strong>libmediainfo</strong> along with the installation package, but it will only be the minimum version required to build that particular release of Dingo. If you want a newer <strong>libmediainfo</strong>, you can always <a href="http://mediainfo.sourceforge.net/en/Download/Fedora" target="_blank" class="doc-link">download the latest RPMs on MediaInfo Homepage</a>.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      For all other systems we recommend checking out <a href="http://mediainfo.sourceforge.net/en/Download" target="_blank" class="doc-link">MediaInfo Homepage</a> for your <strong>libmediainfo</strong> installation.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      <strong>4. Can Dingo be installed on Windows and Mac OSX?</strong>
+    </p>
+    
+    <p class="text-content">
+      At the moment the answer is <strong>No</strong> due to the fact that some Dingo's dependencies (such as gtkmm and gstreamermm) only support Linux. Please see <a href="http://127.0.0.1:8000/about/" class="doc-link">the About page</a> for more information.
+    </p>
+    
+    {# Features #}
+    <h3 class="sub-header" id="report-bugs">
+      Features
+    </h3>
+  
+    <p class="text-content">
+      <strong>1. How and where does Dingo get its cover art?</strong>
+    </p>
+    
+    <p class="text-content">
+      Dingo gets the cover art from the audio/video file itself, then stores the cover art as cache. Later on when the file is played again the cover art will be fetched from the cache, which improves cover art reading speed.
+    </p>
+    
+    <br />
+  
+    <p class="text-content">
+      <strong>2. Does Dingo support audio/video format X (mp3, aac, mpeg ,etc)?</strong>
+    </p>
+    
+    <p class="text-content">
+      Dingo is developed using <a href="http://developer.gnome.org/gstreamermm/0.10/" target="_blank" class="doc-link">GStreamermm</a>, the official C++ binding for <a href="http://gstreamer.freedesktop.org/" target="_blank" class="doc-link">GStreamer</a>. Therefore, Dingo can play any file format supported by the GStreamer codecs you have installed on your system.
+    </p>
+    
+    <br />
+  
+    <p class="text-content">
+      <strong>3. I can't play my audio and/or video files. What is going wrong?</strong>
+    </p>
+    
+    <p class="text-content">
+      If you cannot play your audio and/or video files, please make sure that the files are accessible by non-root users and that the partitions containing them are properly mounted and accessible. 
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      After the above step if your media files are still unplayable it might be because your system lacks the necessary codecs, and you will have to <a href="http://www.flumotion.net/doc/flumotion/manual/en/0.6.0/html/section-installing-gstreamer-plugins.html" target="_blank" class="doc-link">install extra GStreamer-plugins</a> for them to work.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      If the two methods above do not work please <a href="http://127.0.0.1:8000/contribute/report-bugs/" target="_blank" class="doc-link">open a bug in our Github issues tracker</a>. We will take a look at it and get back to you as soon as possible.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      <strong>4. I can play audios, but with videos only the sound is played and the images are not shown. What did I do wrong?</strong>
+    </p>
+    
+    <p class="text-content">
+      If your videos do not show pictures, it is mostly because your system lacks the video codecs required to play the files. Please install <span style="font-family:UbuntuMonoRegular; font-size:16px;">gstreamer-plugins-bad</span>, <span style="font-family:UbuntuMonoRegular; font-size:16px;">gstreamer-plugins-ugly</span> and <span style="font-family:UbuntuMonoRegular; font-size:16px;">gstreamer-ffmpeg</span>, then restart Dingo.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      If the above step does not solve the problem please <a href="http://127.0.0.1:8000/contribute/report-bugs/" target="_blank" class="doc-link">open a bug in our Github issues tracker</a>. We will take a look at it and get back to you as soon as possible.
+    </p>
+  
+    {# Technical #}
+    <h3 class="sub-header" id="translate">
+      Technical
+    </h3>
+  
+    <p class="text-content">
+      <strong>1. Where does Dingo store its configuration/database files?</strong>
+    </p>
+    
+    <p class="text-content">
+      They are stored under <span style="font-family:UbuntuMonoRegular; font-size:16px;">~/.config/dingo-0.5/</span>. The default settings file (<span style="font-family:UbuntuMonoRegular; font-size:16px;">dingo-default.dgs</span>) and the database file (<span style="font-family:UbuntuMonoRegular; font-size:16px;">dingo.db</span>) are stored under two different subdirectories called <span style="font-family:UbuntuMonoRegular; font-size:16px;">settings/</span> and <span style="font-family:UbuntuMonoRegular; font-size:16px;">database/</span>, respectively. 
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      The settings file is in <a href="http://en.wikipedia.org/wiki/XML" target="_blank" class="doc-link">XML-based</a> format, while the database file is a <a href="http://www.sqlite.org/" target="_blank" class="doc-link">SQLite3</a> database.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      <strong>2. Where does Dingo store its cache files?</strong>
+    </p>
+    
+    <p class="text-content">
+      Dingo's cache files are basically cover-arts of all the played audios/videos. They are stored under <span style="font-family:UbuntuMonoRegular; font-size:16px;">~/.cache/dingo/cover-art</span>.
+    </p>
+  </div>
+{% endblock %}

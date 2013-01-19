@@ -1,0 +1,42 @@
+{% extends "contribute/contribute_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Translate{% endblock %}
+
+{% block libs %}{% endblock %}
+
+{% block content %}
+  <div id="content">
+    {# Translate Dingo #}
+    <h3 class="sub-header" id="translate">
+      Translate Dingo
+    </h3>
+  
+    <p class="text-content" style="margin-bottom:0px;">
+      Dingo is shipped supporting two languages by default: English and Vietnamese. However, there are dozens of languages out there that have not been integrated into Dingo. Just by translating some text you can help Dingo expand its user base.
+    </p>      
+    
+    <br />
+    
+    <p class="text-content">
+      Before translating Dingo please check out the translations currently available for the latest release of Dingo and their progresses on <a href="https://github.com/phongvcao/dingo/tree/master/po" target="_blank" class="doc-link">our Github repository</a>. Then please read <a href="https://live.gnome.org/TranslationProject" target="_blank" class="doc-link">translating GNOME applications</a>.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      If possible, you should <strong>contact the existing translators or translation team of the language you want to work on</strong> (their email addresses are noted in <a href="https://github.com/phongvcao/dingo/tree/master/po" target="_blank" class="doc-link">the po files</a>) <strong>to avoid duplicates and conflicts during the translation process</strong>.
+    </p>      
+    
+    <br /> 
+    
+    <p class="text-content">
+      To translate Dingo, you can <a href="https://github.com/phongvcao/dingo/tree/master/po" target="_blank" class="doc-link">download the po files</a> or <a href="http://127.0.0.1:8000/download/development/" class="doc-link">get the latest development version</a> of Dingo.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      After completing the translation, if you know how to use Git and Github please <a href="https://help.github.com/articles/using-pull-requests" target="_blank" class="doc-link">do a pull request</a> on <a href="https://github.com/phongvcao/dingo/pulls" target="_blank" class="doc-link">our Github repository</a>. Otherwise just contact your translation team leaders and send them the patch.
+    </p>
+  </div>
+{% endblock %}

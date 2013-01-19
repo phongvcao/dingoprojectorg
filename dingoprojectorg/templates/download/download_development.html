@@ -1,0 +1,191 @@
+{% extends "download/download_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Development{% endblock %}
+
+{% block libs %}
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download.css" />
+  
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/code_base.css" />
+    
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/libs_base.css" />
+  
+    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/distro_detect.js"></script>
+  
+    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/download.js"></script>
+{% endblock %}
+
+{% block content %}
+  <div id="content">
+    <p class="text-content" style="padding-top:35px; margin-bottom:-10px;">
+      Dingo's <a href="https://github.com/phongvcao/dingo" target="_blank" class="doc-link">git source code repository</a> is available on <a href="https://github.com/" target="_blank" class="doc-link">Github</a>. The latest version of the source is called <span class="text-content-code">master</span>, which is very unstable and consistently changing. It may contain lots of unfixed bugs and potential threats to your data. If you can't handle these risks please use <a href="http://127.0.0.1:8000/download/" class="doc-link">our latest official release</a>.
+    </p>
+  
+    {# Install Dependencies #}
+    <h3 class="sub-header" id="design-icons">
+      1. Install Dependencies
+    </h3>
+  
+    <div class="download-button" id="distro-ubuntu">
+      <img src="http://127.0.0.1:8000/static/images/download/ubuntu.png" />
+      <h4 class="text-content"><strong>Ubuntu</strong></h4>
+    </div>
+  
+    <div class="download-button" id="distro-fedora">
+      <img src="http://127.0.0.1:8000/static/images/download/fedora.png" />
+      <h4 class="text-content"><strong>Fedora</strong></h4>
+    </div>
+  
+    <div class="download-button" id="distro-others">
+      <img src="http://127.0.0.1:8000/static/images/download/linux.png" />
+      <h4 class="text-content"><strong>Others</strong></h4>
+    </div>
+    
+    <div class="distro-details" id="install-ubuntu">
+      {# Install on Ubuntu #}
+      <br />
+      
+      <h4 class="text-content">
+        <strong>a. On Ubuntu</strong>
+      </h4>
+      
+      <p class="text-content">
+        You will need to run the following commands to get all the build dependencies in <a href=http://www.ubuntu.com/" target="_blank" class="doc-link">Ubuntu</a>:
+      </p>
+    
+      <pre class="code-snippet" style="height:55px;">
+      $ sudo apt-get install git autoconf automake libtool intltool gettext g++ make 
+      $ sudo apt-get build-dep dingo
+      </pre>
+    </div>
+  
+    <div class="distro-details" id="install-fedora">
+      {# Install on Fedora #}
+      <br />
+      
+      <h4 class="text-content">
+        <strong>b. On Fedora</strong>
+      </h4>
+  
+      <p class="text-content">
+        You will need to run the following commands to get all the build dependencies in <a href="http://fedoraproject.org/" target="_blank" class="doc-link">Fedora</a>:
+      </p>
+    
+      <pre class="code-snippet" style="height:55px;">
+      $ sudo yum install git autoconf automake libtool intltool gettext gcc-c++ make
+      $ sudo yum-builddep dingo
+      </pre>
+    </div>
+  
+    <div class="distro-details" id="install-others">
+      {# Install on Other Distros #}
+      <br />
+      
+      <h4 class="text-content">
+        <strong>c. On Other Distros</strong>
+      </h4>
+  
+      <p class="text-content">
+        With distros other than <a href=http://www.ubuntu.com/" target="_blank" class="doc-link">Ubuntu</a> and <a href="http://fedoraproject.org/" target="_blank" class="doc-link">Fedora</a>, you will need to install the following dependencies:
+      </p>
+    
+      <p class="text-content">
+        <table class="libs-table" style="margin-left:-3px; margin-top:10px;">
+          <tr>
+            <td class="lib-name">gtkmm(-dev)</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">3.4.0</td>
+            <td class="lib-name">libnotify(-dev)</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">0.7.5</td>
+          </tr>
+          <tr>
+            <td class="lib-name">gstreamermm(-dev)</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">0.10.10</td>
+            <td class="lib-name">boost-program-options(-dev)</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">1.48</td>
+          </tr>
+          <tr>
+            <td class="lib-name">libmediainfo(-dev)</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">0.7.59</td>
+            <td class="lib-name">libxml++(-dev)</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">2.34.2</td>
+          </tr>
+          <tr>
+            <td class="lib-name" style="padding-bottom: 20px;">sqlite(-dev)</td>
+            <td class="lib-sign" style="padding-bottom: 20px;">>=</td>
+            <td class="lib-version" style="padding-bottom: 20px;">3.7.11</td>
+          </tr>
+          <tr>
+            <td class="lib-name">intltool</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">0.50.2</td>
+            <td class="lib-name">gettext</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">0.18.1.1</td>
+          </tr>
+          <tr>
+            <td class="lib-name">git</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">2.34.2</td>
+            <td class="lib-name">autoconf</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">2.34.2</td>
+          </tr>
+          <tr>
+            <td class="lib-name">automake</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">2.34.2</td>
+            <td class="lib-name">libtool</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">2.34.2</td>
+          </tr>
+          <tr>
+            <td class="lib-name">make</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">2.34.2</td>
+            <td class="lib-name">g++</td>
+            <td class="lib-sign">>=</td>
+            <td class="lib-version">4.7.2</td>
+          </tr>
+        </table>
+      </p>
+    </div>
+    
+    {# Get the Latest Source Code #}
+    <h3 class="sub-header" id="translate">
+      2. Get the Latest Source Code
+    </h3>
+  
+    <p class="text-content">
+      After installing all necessary dependencies, you can use <a href="http://git-scm.com/" target="_blank" class="doc-link">git</a> to check out <a href="https://github.com/phongvcao/dingo" target="_blank" class="doc-link">a copy of Dingo's latest development version</a>:
+    </p>
+    
+    <pre class="code-snippet" style="height:35px;">
+      $ git clone git://github.com/phongvcao/dingo.git
+    </pre>
+    
+    {# Build, Install and Run #}
+    <h3 class="sub-header" id="translate">
+      3. Build, Install and Run
+    </h3>
+    
+    <p class="text-content">
+      Finally, you just need to move to the folder where you checked the source code out from <a href="https://github.com/phongvcao/dingo" target="_blank" class="doc-link">Github</a>, build the necessary components, then install into your system: 
+    </p>
+    
+    <pre class="code-snippet" style="height:95px; margin-bottom:5px;">
+      $ cd /path/to/dingo/directory
+      $ ./configure
+      $ make
+      $ make install
+    </pre>
+    
+    <p class="text-content">
+      HAVE FUN HACKING!
+    </p>
+  </div>
+{% endblock %}

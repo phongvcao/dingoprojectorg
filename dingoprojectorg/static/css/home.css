@@ -1,0 +1,168 @@
+/* Slide Show */
+.slides_container {
+  width: 1000px;
+  height: 400px;
+}
+
+.slides_slide {
+  width: 1000px;
+  height: 400px;
+}
+
+.slides_left-button, .slides_container, .slides_right-button {
+  float: left;
+}
+
+#slides {
+  padding-top: 110px;
+}
+
+.rl-buttons-mouseover {
+  filter: alpha(opacity=50);
+  opacity: 0.50;
+  display: inline;
+}
+
+.rl-buttons-hover {
+  filter: alpha(opacity=75);
+  opacity: 0.75;
+  display: inline;
+}
+
+.rl-buttons-mouseleave {
+  display: none;
+}
+
+.slides_left-button:link {
+  margin-top: 170px;
+  z-index: 10000;
+  margin-right: -50px;
+}
+
+.slides_right-button:link {
+  margin-top: 170px;
+  z-index: 10000;
+  margin-left: -50px;
+}
+
+.slides_left-button:visited {
+  margin-top: 170px;
+  z-index: 10000;
+  margin-right: -50px;
+}
+
+.slides_right-button:visited {
+  margin-top: 170px;
+  z-index: 10000;
+  margin-left: -50px;
+}
+
+.slides_container {
+  z-index: -10000;
+  margin: auto;
+  -moz-box-shadow: 3px 1px 3px 3px #ccc;
+  -webkit-box-shadow: 3px 1px 3px 3px #ccc;
+  box-shadow: 3px 1px 3px 3px #ccc;
+}
+
+.slides_slide img {
+  float: right;
+}
+
+.slides_slide-text {
+  font-size: 40px;
+  font-family: UbuntuLight, Arial, san-serif;
+  float: left;
+  width: 370px;
+  display: block;
+  padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.slides_slide-capture {
+  font-size: 20px;
+  font-family: UbuntuLight, Arial, san-serif;
+  float: left;
+  width: 370px;
+  display: block;
+  line-height: 30px;
+  padding-top: 20px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 40px;
+}
+
+.slides_download-button {
+  border-top: 1px solid #417023;
+  background: #417023;
+  background: -webkit-gradient(linear, left top, left bottom, from(#417023), to(#417023));
+  background: -webkit-linear-gradient(top, #417023, #417023);
+  background: -moz-linear-gradient(top, #417023, #417023);
+  background: -ms-linear-gradient(top, #417023, #417023);
+  background: -o-linear-gradient(top, #417023, #417023);
+  padding: 10px 20px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+  box-shadow: rgba(0,0,0,1) 0 1px 0;
+  text-shadow: rgba(0,0,0,.4) 0 1px 0;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: UbuntuRegular, Arial, san-serif;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.slides_download-button:hover {
+  border-top-color: #568a35;
+  background: #568a35;
+  color: #ffffff;
+}
+
+.slides_download-button:active {
+  border-top-color: #417023;
+  background: #417023;
+}
+
+/* Quick access container */
+.quick-access {
+  font-family: UbuntuLight, Arial, san-serif;
+  font-size: 16px;
+  width: 320px;
+  height: 300px;
+  display: inline-block;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #EFEEEE;
+  text-align: left;
+  -moz-box-shadow: 1px 1px 3px 3px #ccc;
+  -webkit-box-shadow: 1px 1px 3px 3px #ccc;
+  box-shadow: 1px 1px 3px 3px #ccc;
+}
+
+#quick-access-middle {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.quick-access-header {
+  font-size: 20px;
+  padding: 25px 20px 20px 20px;
+  color: #505050;
+}
+
+.quick-access-text {
+  padding: 0px 20px 20px 20px;
+  line-height: 24px;
+  color: #505050;
+}
+
+.quick-access-link {
+  text-decoration: none;
+  color: #407023;
+  margin-left: 20px;
+}

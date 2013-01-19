@@ -1,0 +1,77 @@
+{% extends "contribute/contribute_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Design Icons{% endblock %}
+
+{% block libs %}{% endblock %}
+
+{% block content %}
+  <div id="content">
+    {# Our Problem #}
+    <h3 class="sub-header" id="design-icons">
+      Our Problem
+    </h3>
+  
+    <p class="text-content" style="margin-bottom:0px;">
+      Unlike other open-source software, Dingo was started out as a personal project of its author, a non-designer non-artist programmer. Therefore, all the icons that are distributed with the currently latest release of Dingo (except for the main logo, which was designed by <a href="http://www.customicondesign.com/" target="_blank" class="doc-link">Custom Icon Design</a>) are taken from either <a href="http://www.gnome.org/gnome-3/" target="_blank" class="doc-link">GNOME 3</a> or other free software packages. <strong>This is really not a good thing and so we need help from volunteer designers and artists</strong>.
+    </p>
+    
+    {# Available Icons #}
+    <h3 class="sub-header" id="translate">
+      Available Icons
+    </h3>
+  
+    <p class="text-content">
+      The full list of icons is available through <a href="https://github.com/phongvcao/dingo/tree/master/data/icons" target="_blank" class="doc-link">our Github repository</a>. You can also <a href="http://127.0.0.1:8000/download/development/" class="doc-link">download the latest development version of Dingo</a> to see these icons. All of the icons are in need to be redesigned or replaced with something better-looking and unique to Dingo.
+    </p>
+    
+    {# Design Guidelines #}
+    <h3 class="sub-header" id="translate">
+      Design Guidelines
+    </h3>
+    
+    <p class="text-content">
+      Please keep in mind that Dingo uses the <a href="http://www.gtkmm.org/en/index.html" target="_blank" class="doc-link">Gtkmm</a> <a href="http://www.gtk.org/" target="_blank" class="doc-link">(GTK+)</a> library for its user-interface. This means that Dingo's icons should be designed in a way that fit with the GNOME icons theme. Please read <a href="http://developer.gnome.org/hig-book/3.5/icons-design.html.en" target="_blank" class="doc-link">Designing Effective Icons</a> and <a href="http://art.gnome.org/" target="_blank" class="doc-link">art.gnome.org</a> before getting started.
+    </p>      
+    
+    <br /> 
+    
+    <p class="text-content">
+      If you have some new ideas on how the icons in Dingo should look like, or even better, have completed some icons specially tailored for Dingo, please do not hesitate to <a href="#" target="_blank" class="doc-link">contact us through our mailing-list</a> (see the following section). 
+    </p>
+    
+    {# Submitting Icons #}
+    <h3 class="sub-header" id="translate">
+      Submitting Icons
+    </h3>
+    
+    <p class="text-content" style="margin-bottom:5px;">
+      It is important to note that if you decide to design and submit icons for Dingo <strong>you must include the following in your email to</strong> <a href="#" target="_blank" class="doc-link">our mailing-list</a>, <strong>or your works will not be accepted</strong>:
+    </p>
+    
+    
+    <div style="margin-left:30px;">
+      <ol class="text-content">
+        <li>The scalable version of the icon (required)</li>
+        <li>The non-scalable versions of the icon in the following dimension (optional): <br />16 x 16, 24 x 24, 32 x 32, 48 x 48, 128 x 128, 256 x 256</li>
+        <li>Your full name (required)</li>
+        <li>Your email address (required)</li>
+        <li>Your website URL (optional)</li>
+      </ol>
+    </div>
+    
+    <br />
+    
+    <p class="text-content">
+      After approving these icons, we will attach all of your submitted information into the releases that use your icons and <a href="http://127.0.0.1:8000/about/#contributors-list" class="doc-link">the Contributors List</a> on this site.
+    </p>
+    
+    {# Licensing #}
+    <h3 class="sub-header" id="translate">
+      Licensing
+    </h3>
+    
+    <p class="text-content" style="margin-bottom:5px;">
+      Dingo is licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank" class="doc-link">the GNU General Public License v3.0</a>. When you submit your works to Dingo, you keep your copyright, but all icons will be licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank" class="doc-link">the GNU General Public License v3.0</a> (and any later version if available).
+    </p>
+  </div>
+{% endblock %}

@@ -1,0 +1,144 @@
+{% extends "download/download_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Dingo {{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}{% endblock %}
+
+{% block libs %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download_archives_detail.css" />
+{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download_base.css" />
+
+    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/download_base.js"></script>
+    {% if archive_detail %}
+    <style type="text/css">
+      #subpage-{% if archive_detail %}{{ archive_detail.major }}-{{ archive_detail.minor }}-{{ archive_detail.micro }}{% endif %} {
+        color: brown;
+      }
+    </style>{% endif %}
+{% endblock %}
+
+{% block sidebar %}
+  <div id="sidebar">
+    <ul class="list-links">
+      {% for archive in archives_list %}
+      <li><a href="http://127.0.0.1:8000/download/archives/{{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}" class="doc-link" id="subpage-{{ archive.major }}-{{ archive.minor }}-{{ archive.micro }}">Dingo {{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div id="content">
+    {# Dingo major.minor.micro #}
+    <h3 class="sub-header" id="select-os">
+      Dingo {{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}
+    </h3>
+  
+    <ul class="text-content" style="padding-top:35px; margin-bottom:20px; list-style-type:circle; padding:0; margin-left:0;">
+      <li><strong>Release Date:</strong> {{ archive_release_date }}</li>
+      <li><strong>Source Tarball:</strong> <a href="https://sourceforge.net/projects/dingomm/files/{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}/dingo-{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}.tar.gz/download" target="_blank" class="doc-link">dingo-{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}.tar.gz</a></li>
+      <li><strong>Release Information:</strong> <a href="#" target="_blank" class="doc-link">NEWS</a></li>
+    </ul>
+    
+    <a class="slides_download-button" href="http://127.0.0.1:8000/download/" style=" margin-left:0px;">Get Dingo!</a>
+    
+    <div class="text-content" style="margin-top:20px;">
+      {{ archive_detail.capture|safe }}
+    </div>
+    
+    {% if archive_detail.total_bug_fixes %}
+    {# Notable Bug Fixes #}
+    <h3 class="sub-header" id="select-os">
+      Notable Bug Fixes ({{ archive_detail.total_bug_fixes }} fixed since {% ifnotequal archive_detail.micro 0 %}{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro|add:"-1" }}{% else %}{{ archive_detail.major }}.{{ archive_detail.minor|add:"-1" }}.{{ archive_detail.micro }}{% endifnotequal %})
+    </h3>
+  
+    {{ archive_detail.notable_bug_fixes|safe }}
+    {% endif %}
+    
+    {% if archive_detail.new_features %}
+    {# New Features #}
+    <h3 class="sub-header" id="select-os">
+      New Features
+    </h3>
+    
+    {{ archive_detail.new_features|safe }}
+        
+    {% if archive_detail.other_enhancements %}
+    {# Other Enhancements #}
+    <h3 class="sub-header" id="select-os" style="display:block;">
+      Other Enhancements
+    </h3>
+  
+    {{ archive_detail.other_enhancements|safe }}
+    {% endif %}
+    {% endif %}
+    
+    {# Dependencies #}
+    <h3 class="sub-header" id="select-os" style="display:block;">
+      Dependencies
+    </h3>
+    
+    {{ archive_detail.dependencies|safe }}
+    
+    {# Contributors #}
+    <h3 class="sub-header" id="select-os" style="display:block;">
+      Contributors
+    </h3>
+    
+    <p class="text-content">
+      <strong>Contributors of This Release</strong>
+    </p>
+    <br />
+      
+    {% if archive_detail.developers %}
+    <p class="text-content">
+      The following people contributed either directly through source code or through emails answering questions of the author. Without them there would be no release!
+    </p>
+    <br />
+    
+    <div class="indentation">
+      {{ archive_detail.developers|safe }}
+    </div>
+    <br />
+    {% endif %}
+    
+    {% if archive_detail.translators %}
+    <p class="text-content">
+      The following people contributed updated translations to this release. Without them, our project's reach would be much more limited!
+    </p>
+    <br />
+    
+    <div class="indentation">
+      {{ archive_detail.translators|safe }}
+    </div>
+    <br />
+    {% endif %}
+    
+    {% if archive_detail.designers %}
+    <p class="text-content">
+      The following people contributed to the project through designing icons/images/logos for the project. Without them, our project would look terrible!
+    </p>
+    <br />
+    
+    <div class="indentation">
+      {{ archive_detail.designers|safe }}
+    </div>
+    {% endif %}
+    
+    {% if archive_detail.get_prev_contributors %}
+    <br />
+    <br />
+    
+    {# Contributors of Previous Releases #}
+    <p class="text-content">
+      <strong>Contributors of Previous Releases</strong>
+    </p>
+    <br />
+    
+    <div class="indentation">
+      {{ archive_detail.get_prev_contributors|safe }}
+    </div>
+    {% endif %}
+  </div>
+{% endblock %}

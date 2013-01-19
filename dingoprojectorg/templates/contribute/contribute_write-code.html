@@ -1,0 +1,94 @@
+{% extends "contribute/contribute_base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Write Code{% endblock %}
+
+{% block libs %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/code_base.css" />
+{% endblock %}
+
+{% block content %}
+  <div id="content">
+    {# Code Licensing #}
+    <h3 class="sub-header" id="code-licensing">
+      Code Licensing
+    </h3>
+  
+    <p class="text-content">
+      Dingo is licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank" class="doc-link">the GNU General Public License v3.0</a>. When you contribute to Dingo, you keep your copyright, but all contributions will be licensed under <a href="http://www.gnu.org/licenses/gpl.html" target="_blank" class="doc-link">the GNU General Public License v3.0</a> (and any later version if available).
+    </p>
+    
+    {# Getting Dingo #}
+    <h3 class="sub-header" id="getting-dingo">
+      Getting Dingo
+    </h3>
+  
+    <p class="text-content">
+      Before getting started writing code for Dingo make sure you have <a href="http://127.0.0.1:8000/download/development/" class="doc-link">our latest development version</a>.
+    </p>
+  
+    {# Building Dingo #}
+    <h3 class="sub-header" id="translate">
+      Building Dingo
+    </h3>
+  
+    <p class="text-content">
+      Once you have got the latest development version of Dingo with all the necessary dependencies, it is very easy to build the development package. We use the GNU standard build system, <a href="http://en.wikipedia.org/wiki/GNU_build_system" target="_blank" class="doc-link">Autotools</a>, for Dingo. Once you have satisfied all the required dependencies you are ready to build:
+    </p>
+    
+    <pre class="code-snippet" style="height:95px;">
+      $ cd dingo
+      $ ./configure
+      $ make
+      $ make install
+    </pre>
+    
+    <p class="text-content">
+      In case you are not very familiar with Autotools we recommend checking out <a href="http://www.amazon.com/Autotools-Practioners-Autoconf-Automake-Libtool/dp/1593272065/ref=sr_1_1?ie=UTF8&qid=1357698269&sr=8-1&keywords=autotools" target="_blank" class="doc-link">Autotools: A Practioner's Guide to GNU Autoconf, Automake, and Libtool</a> and <a href="http://www.gnu.org/software/automake/#documentation" target="_blank" class="doc-link">The Official Automake Documentation</a>.
+    </p>
+  
+    {# Adding Features #}
+    <h3 class="sub-header" id="design-icons">
+      Adding Features
+    </h3>
+    
+    <p class="text-content">
+      Dingo began as a small personal project of its author and <a href="http://127.0.0.1:8000/about/" class="doc-link">our aim is to provide a simple yet effective way for Linux users to manage and enjoy their audios/videos collections</a>. Thus, we think really hard when it comes to new feature: Will it be beneficial to a large amount of users? Will it conflict or duplicate with other functions of the software? etc.. If you are going to extend Dingo we strongly recommend reading <a href="http://ometer.com/features.html" target="_blank" class="doc-link">Havoc Pennington's excellent article</a> on this matter before getting started.
+    </p>
+    
+    {# Coding Style #}
+    <h3 class="sub-header" id="write-code">
+      Coding Style
+    </h3>
+  
+    <p class="text-content">
+      Maintaining Dingo code base will be a lot easier if the developers and contributors agree on a single C/C++ coding style. <a href="https://github.com/phongvcao/dingo/blob/master/HACKING" target="_blank" class="doc-link">Here is our style guidelines for all patches and extensions</a>.
+    </p>
+    
+    {# Hacking & Patching #}
+    <h3 class="sub-header" id="write-code">
+      Hacking & Patching
+    </h3>
+  
+    <p class="text-content">
+      We use <a href="http://git-scm.com/" target="_blank" class="doc-link">Git</a> to manage Dingo's source code. To produce a patch, please first commit to your local git branch, then produce the patch using <span class="text-content-code">`git format-patch HEAD~1`</span> to include your commit message and author information.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      After finishing the patch and commiting it, please <a href="https://github.com/phongvcao/dingo/issues?state=open" target="_blank" class="doc-link">create an issue in Dingo's Github issues tracker</a> and label it "enhancement". You should describe in as much details as possible about the patch, the <a href="https://bugzilla.gnome.org/page.cgi?id=fields.html#bug_severity" target="_blank" class="doc-link">severity</a>, and whether (in your opinion) the patch is a good or bad solution for the problem.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      At the time this page is written, <a href="http://stackoverflow.com/questions/10963205/how-to-attach-file-to-a-github-issue" target="_blank" class="doc-link">Github does not yet have a way to attach files into bug reports</a>. Therefore, we recommend that you <a href="https://github.com/signup/free" target="_blank" class="doc-link">create a Github account</a>, then <a href="https://help.github.com/articles/create-a-repo" target="_blank" class="doc-link">create a repo</a> named <span class="text-content-code">dingo-PATCH_NAME</span> and push your patch up there. Or you can compress the patch and upload it somewhere and insert the download link into the report. The report will be reviewed and if it is approved the maintainer will commit the patch.
+    </p>
+    
+    <br />
+    
+    <p class="text-content">
+      Please do not send your patch report to <a href="#" target="_blank" class="doc-link">our mailing-list</a>, because Dingo's developers automatically get emailed when you open an issue in Github.
+    </p>
+  </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block static %}
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/about_base.css" />
+
+  <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/about_base.js"></script>
+  
+  {% if subpage %}
+  <style type="text/css">
+    #subpage-{% if subpage %}{{ subpage }}{% endif %} {
+      color: brown;
+    }
+  </style>
+  {% endif %}
+{% endblock %}
+
+{% block sidebar %}
+  <div id="sidebar">
+    <ul class="list-links">
+      <li><a href="http://127.0.0.1:8000/about/contact" class="doc-link" id="subpage-contact">Contact</a></li>
+      <li><a href="http://127.0.0.1:8000/about/contact#hirings" class="doc-link" id="subpage-hirings">Hirings</a></li>
+      <li><a href="#" class="doc-link" id="subpage-features">Features</a></li>
+      <li><a href="http://127.0.0.1:8000/about/license" class="doc-link" id="subpage-license">License</a></li>
+    </ul>
+  </div>
+{% endblock %}

@@ -31,7 +31,7 @@
         <li class="nav-button"><a href="http://127.0.0.1:8000/download" class="nav-link" id="nav-link-download">Download</a></li>
         <li class="nav-button"><a href="http://127.0.0.1:8000/contribute" class="nav-link" id="nav-link-contribute">Contribute</a></li>
         <li class="nav-button"><a href="http://127.0.0.1:8000/help" class="nav-link" id="nav-link-help">Help</a></li>
-        <li id="logo-text"><a href="http://127.0.0.1:8000/" id="logo-text-link">dingo</a></li>      
+        <li id="logo-text"><a href="http://127.0.0.1:8000/"><img src="http://127.0.0.1:8000/static/images/base/dingoproject-logo-header.png" alt="dingoproject's large logo" id="large-logo"></a></li>      
       </ul>
     </div>
     
@@ -42,10 +42,53 @@
       </a>
     </div>
     
+    <div id="content-container">
     {% block sidebar %}{% endblock %}
     
     {% block content %}{% endblock %}
+    </div>
     
-    {% block footer %}{% endblock %}
+    <div id="footer-row">
+      <ul id="footer-nav-logo">
+        <a href="http://127.0.0.1:8000/"><img src="http://127.0.0.1:8000/static/images/base/dingoproject-logo-footer.png" alt="dingoproject's small logo" id="small-logo"></a>
+        <p id="powered-by">Powered by <a href="http://www.gnome.org/" target="_blank">GNOME</a>, <a href="http://gstreamer.freedesktop.org/" target="_blank">GStreamer</a>, <a href="http://www.sqlite.org/" target="_blank">SQLite</a> and <a href="http://127.0.0.1:8000/about/#technical-summary">more!</a></p>
+      </ul>
+    
+      <ul class="footer-nav">
+        <li><a href="http://127.0.0.1:8000/about" class="footer-heading">About</a></li>
+        <li><a href="http://127.0.0.1:8000/about/contact">Contact</a></li>
+        <li><a href="http://127.0.0.1:8000/about/contact/#hirings">Hirings</a></li>
+        <li><a href="http://127.0.0.1:8000/about/features">Features</a></li>
+        <li><a href="http://127.0.0.1:8000/about/license">License</a></li>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="http://127.0.0.1:8000/screenshots" class="footer-heading">Screenshots</a></li>
+        <li><a href="http://127.0.0.1:8000/screenshots/#ubuntu">Ubuntu</a></li>
+        <li><a href="http://127.0.0.1:8000/screenshots/#fedora">Fedora</a></li>    
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="http://127.0.0.1:8000/download" class="footer-heading">Download</a></li>
+        <li><a href="http://127.0.0.1:8000/download">Latest Stable</a></li>
+        <li><a href="http://127.0.0.1:8000/download/archives">Archives</a></li>
+        <li><a href="http://127.0.0.1:8000/download/development">Development</a></li>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="http://127.0.0.1:8000/contribute" class="footer-heading">Contribute</a></li>
+        <li><a href="http://127.0.0.1:8000/contribute/report-bugs">Report Bugs</a></li>
+        <li><a href="http://127.0.0.1:8000/contribute/translate">Translate Dingo</a></li>
+        <li><a href="http://127.0.0.1:8000/contribute/design-icons">Design Icons</a></li>
+        <li><a href="http://127.0.0.1:8000/contribute/write-code">Write Code</a></li>
+      </ul>
+      <ul class="footer-nav">
+        <li><a href="http://127.0.0.1:8000/help" class="footer-heading">Help</a></li>
+        <li><a href="http://127.0.0.1:8000/help/faq">FAQ</a></li>
+        <li><a href="http://127.0.0.1:8000/help/#mailing-list">Mailing List</a></li>
+        <li><a href="http://127.0.0.1:8000/help/#irc-chat">IRC Chat</a></li>
+      </ul>
+    </div>
+    
+    <p id="copyright-notice">
+      Copyright &copy 2011-2013 Phong V. Cao and Dingo contributors. All Rights Reserved.
+    </p>
   </body>
 </html>

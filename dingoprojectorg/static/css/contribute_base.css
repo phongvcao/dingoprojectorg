@@ -6,6 +6,15 @@
   padding-left: 15px;
 }
 
+/* Content Container */
+#content-container {
+  width: 1000px;
+  padding-bottom: 40px;
+  -moz-box-shadow: 1px 1px 3px 3px #ccc;
+  -webkit-box-shadow: 1px 1px 3px 3px #ccc;
+  box-shadow: 1px 1px 3px 3px #ccc;
+}
+
 .sub-header {
   font-size: 20px;
   font-weight: bold;

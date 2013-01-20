@@ -4,6 +4,8 @@
 
 {% block libs %}
   <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/libs_base.css" />
+  
+  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/code_base.css" />
 {% endblock %}
 
 {% block content %}
@@ -187,7 +189,7 @@
     </p>
     
     <p class="text-content">
-      If your videos do not show pictures, it is mostly because your system lacks the video codecs required to play the files. Please install <span style="font-family:UbuntuMonoRegular; font-size:16px;">gstreamer-plugins-bad</span>, <span style="font-family:UbuntuMonoRegular; font-size:16px;">gstreamer-plugins-ugly</span> and <span style="font-family:UbuntuMonoRegular; font-size:16px;">gstreamer-ffmpeg</span>, then restart Dingo.
+      If your videos do not show pictures, it is mostly because your system lacks the video codecs required to play the files. Please install <span class="text-content-code">gstreamer-plugins-bad</span>, <span class="text-content-code">gstreamer-plugins-ugly</span> and <span class="text-content-code">gstreamer-ffmpeg</span>, then restart Dingo.
     </p>
     
     <br />
@@ -206,7 +208,7 @@
     </p>
     
     <p class="text-content">
-      They are stored under <span style="font-family:UbuntuMonoRegular; font-size:16px;">~/.config/dingo-0.5/</span>. The default settings file (<span style="font-family:UbuntuMonoRegular; font-size:16px;">dingo-default.dgs</span>) and the database file (<span style="font-family:UbuntuMonoRegular; font-size:16px;">dingo.db</span>) are stored under two different subdirectories called <span style="font-family:UbuntuMonoRegular; font-size:16px;">settings/</span> and <span style="font-family:UbuntuMonoRegular; font-size:16px;">database/</span>, respectively. 
+      They are stored under <span class="text-content-code">~/.config/dingo-0.5/</span>. The default settings file (<span class="text-content-code">dingo-default.dgs</span>) and the database file (<span class="text-content-code">dingo.db</span>) are stored under two different subdirectories called <span class="text-content-code">settings/</span> and <span class="text-content-code">database/</span>, respectively. 
     </p>
     
     <br />
@@ -222,7 +224,7 @@
     </p>
     
     <p class="text-content">
-      Dingo's cache files are basically cover-arts of all the played audios/videos. They are stored under <span style="font-family:UbuntuMonoRegular; font-size:16px;">~/.cache/dingo/cover-art</span>.
+      Dingo's cache files are basically cover-arts of all the played audios/videos. They are stored under <span class="text-content-code">~/.cache/dingo/cover-art</span>.
     </p>
   </div>
 {% endblock %}

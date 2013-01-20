@@ -2,6 +2,10 @@
 .slides_container {
   width: 1000px;
   height: 400px;
+  margin: auto;
+  -moz-box-shadow: 3px 1px 3px 3px #ccc;
+  -webkit-box-shadow: 3px 1px 3px 3px #ccc;
+  box-shadow: 3px 1px 3px 3px #ccc;
 }
 
 .slides_slide {
@@ -17,52 +21,29 @@
   padding-top: 110px;
 }
 
-.rl-buttons-mouseover {
+.rl-buttons-slides_container-mouseover {
   filter: alpha(opacity=50);
-  opacity: 0.50;
-  display: inline;
+  opacity: 0.5;
 }
 
-.rl-buttons-hover {
+.rl-buttons-mouseover {
   filter: alpha(opacity=75);
   opacity: 0.75;
-  display: inline;
 }
 
-.rl-buttons-mouseleave {
-  display: none;
-}
-
-.slides_left-button:link {
+#left-button, #right-button {
   margin-top: 170px;
   z-index: 10000;
+  position: relative;
+  cursor: pointer;
+}
+
+#left-button {
   margin-right: -50px;
 }
 
-.slides_right-button:link {
-  margin-top: 170px;
-  z-index: 10000;
+#right-button {
   margin-left: -50px;
-}
-
-.slides_left-button:visited {
-  margin-top: 170px;
-  z-index: 10000;
-  margin-right: -50px;
-}
-
-.slides_right-button:visited {
-  margin-top: 170px;
-  z-index: 10000;
-  margin-left: -50px;
-}
-
-.slides_container {
-  z-index: -10000;
-  margin: auto;
-  -moz-box-shadow: 3px 1px 3px 3px #ccc;
-  -webkit-box-shadow: 3px 1px 3px 3px #ccc;
-  box-shadow: 3px 1px 3px 3px #ccc;
 }
 
 .slides_slide img {
@@ -150,9 +131,9 @@
 }
 
 .quick-access-header {
-  font-size: 20px;
+  font-size: 21px;
   padding: 25px 20px 20px 20px;
-  color: #505050;
+  color: #407023;
 }
 
 .quick-access-text {
@@ -165,4 +146,5 @@
   text-decoration: none;
   color: #407023;
   margin-left: 20px;
+  font-style: italic;
 }

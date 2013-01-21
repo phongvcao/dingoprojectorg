@@ -6,6 +6,9 @@ admin.autodiscover()
 
 from dingoprojectorg.views import *
 
+handler404 = 'dingoprojectorg.views.handler404'
+handler500 = 'dingoprojectorg.views.handler500'
+
 urlpatterns = patterns('',
     (r'^$', home_page_view),
     (r'^about/$', about_page_view),
@@ -29,8 +32,4 @@ urlpatterns = patterns('',
     (r'^download/archives/$', 'archives.views.archives_index'),
     (r'^download/archives/(?P<major>\d+).(?P<minor>\d+).(?P<micro>\d+)/$', 'archives.views.archive_detail'),
     (r'^download/(?P<subpage>.*)/$', download_subpage_view),
-    # (r'^search$', 'search.views.search'),
-    # (r'^weblog/$', 'coltrane.views.entries_index'),
-    # (r'^weblog/(?P<year>\d{4})/(?P<month>\w{3})/(?P<day>\d{2})/(?P<slug>[-\w]+)/$', 'coltrane.views.entry_detail'),
-    # (r'', include('django.contrib.flatpages.urls')),
 )

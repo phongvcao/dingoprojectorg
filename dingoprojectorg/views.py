@@ -1,6 +1,14 @@
 from django.http import Http404, HttpResponse
 from django.shortcuts import render_to_response
 from archives.models import Archive
+from django.views.defaults import page_not_found, server_error
+
+# Error #
+def handler404(request):
+    return page_not_found(request, "404.html")
+
+def handler500(request):
+    return server_error(request, "505.html")
 
 # Home #
 def home_page_view(request):

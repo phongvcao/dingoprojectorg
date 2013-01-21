@@ -21,7 +21,7 @@
 
 - DONE: Add more dependencies to FAQ
 
-2. This weekend:
+2. Saturday 01/19/13:
 - DONE: Vertically-align Home's slideshow
 
 - DONE: Shadow for all pages! (adjust base.css)
@@ -29,24 +29,55 @@
   (Same color and width as the base.html's header - like ubuntu.com)
   (We should not use table. It is not appropriate structurally
    and logically and non-CSS. Use ul/li instead)
+
+3. Sunday 01/20/13:
+- DONE: Increase margins of slides_slide in slideshow so that
+  the text won't be too closed to the two sides
   
-- Create not_found.html to catch all urlpatterns
+- DONE: Deploy Django & this website on Hostgator.com (first try out
+  their cheapest package & shortest time)
+  
+- DONE: Refactor settings.py and other settings file "from ... 
+  import" statement so that they won't look so messy!
+  
+- DONE: Create "Latest stable release is ... " bar on top of 
+  Download and Archives page
+  
+- DONE: Create 404.html to catch all page_not_found
   (With a sidebar containing all the "big" directories of the page)
   (Sorry, the page you are finding does not exist.)
-- Create "Latest stable release is ... " bar on top of Download page
+
+- DONE: Create 505.html to catch all server_error
+
+- DONE: Create favicon
+- DONE: Set-up mailing-list
+  (List Archives: http://dingo-project.org/pipermail/dingo-list_dingo-project.org/)
+  (List URL: http://dingo-project.org/mailman/listinfo/dingo-list_dingo-project.org)
+
+- DONE: Create IDs for all headers in all html files
+- DONE: Edit Dingo's homepage address on SourceForge.net and Github
+
+- DONE: Replace @font-face with Google Web Fonts
+
+4. Monday 01/21/13
+- Fix "Get Dingo!" ugly appearance in IE 9
+
+- Create a folder call "deploy" on the same level with manage.py
+  and put all the necessary deployment files there (.htaccess, etc.)
 
 - Create about_features.html
 - Create screenshots.html (No need for screenshots_base.html)
 
-
-- Create IDs for all headers in all html files
-
 - Finish packing packages & upload to all necessary websites
-- Deploy Django & this website on Hostgator.com (first try out
-  their cheapest package & shortest time)
 - Edit all "#" links in .html files to the working ones
-- Edit Dingo's homepage address on SourceForge.net and Github
 
-- Implement Ajax
+- Implement Search functionality in "Help" page
 
 - Add Google Analytics <script> and webmaster before releasing.
+- Finish up INSTALL Notes (Add the installation instruction).
+
+- Implement Ajax
+- Django Admin interface on http://dingo-project.org/
+
+- Copy the scalable version of dingoprojectorg.svg to dingo's
+  package

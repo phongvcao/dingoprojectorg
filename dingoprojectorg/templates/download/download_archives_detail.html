@@ -3,13 +3,13 @@
 {% block title %}Dingo &rsaquo;&rsaquo; Dingo {{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}{% endblock %}
 
 {% block libs %}
-  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download_archives_detail.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/download_archives_detail.css" />
 {% endblock %}
 
 {% block static %}
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download_base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/download_base.css" />
 
-    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/download_base.js"></script>
+    <script type="text/javascript" src="/static/jquery/download_base.js"></script>
     {% if archive_detail %}
     <style type="text/css">
       #subpage-{% if archive_detail %}{{ archive_detail.major }}-{{ archive_detail.minor }}-{{ archive_detail.micro }}{% endif %} {
@@ -22,7 +22,7 @@
   <div id="sidebar">
     <ul class="list-links">
       {% for archive in archives_list %}
-      <li><a href="http://127.0.0.1:8000/download/archives/{{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}" class="doc-link" id="subpage-{{ archive.major }}-{{ archive.minor }}-{{ archive.micro }}">Dingo {{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}</a></li>
+      <li><a href="/download/archives/{{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}" class="doc-link" id="subpage-{{ archive.major }}-{{ archive.minor }}-{{ archive.micro }}">Dingo {{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}</a></li>
       {% endfor %}
     </ul>
   </div>
@@ -31,17 +31,17 @@
 {% block content %}
   <div id="content">
     {# Dingo major.minor.micro #}
-    <h3 class="sub-header" id="select-os">
+    <h3 class="sub-header" id="version">
       Dingo {{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}
     </h3>
   
     <ul class="text-content" style="padding-top:35px; margin-bottom:20px; list-style-type:circle; padding:0; margin-left:0;">
-      <li><strong>Release Date:</strong> {{ archive_release_date }}</li>
-      <li><strong>Source Tarball:</strong> <a href="https://sourceforge.net/projects/dingomm/files/{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}/dingo-{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}.tar.gz/download" target="_blank" class="doc-link">dingo-{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}.tar.gz</a></li>
-      <li><strong>Release Information:</strong> <a href="#" target="_blank" class="doc-link">NEWS</a></li>
+      <li class="text-content"><span style="font-weight:400;">Release Date:</span> {{ archive_release_date }}</li>
+      <li class="text-content"><span style="font-weight:400;">Source Tarball:</span> <a href="https://sourceforge.net/projects/dingomm/files/{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}/dingo-{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}.tar.gz/download" target="_blank" class="doc-link">dingo-{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro }}.tar.gz</a></li>
+      <li class="text-content"><span style="font-weight:400;">Release Information:</span> <a href="#" target="_blank" class="doc-link">NEWS</a></li>
     </ul>
     
-    <a class="slides_download-button" href="http://127.0.0.1:8000/download/" style=" margin-left:0px;">Get Dingo!</a>
+    <a class="slides_download-button" href="/download/" style=" margin-left:0px;">Get Dingo!</a>
     
     <div class="text-content" style="margin-top:20px;">
       {{ archive_detail.capture|safe }}
@@ -49,7 +49,7 @@
     
     {% if archive_detail.total_bug_fixes %}
     {# Notable Bug Fixes #}
-    <h3 class="sub-header" id="select-os">
+    <h3 class="sub-header" id="notable-bug-fixes">
       Notable Bug Fixes ({{ archive_detail.total_bug_fixes }} fixed since {% ifnotequal archive_detail.micro 0 %}{{ archive_detail.major }}.{{ archive_detail.minor }}.{{ archive_detail.micro|add:"-1" }}{% else %}{{ archive_detail.major }}.{{ archive_detail.minor|add:"-1" }}.{{ archive_detail.micro }}{% endifnotequal %})
     </h3>
   
@@ -58,7 +58,7 @@
     
     {% if archive_detail.new_features %}
     {# New Features #}
-    <h3 class="sub-header" id="select-os">
+    <h3 class="sub-header" id="new-features">
       New Features
     </h3>
     
@@ -66,7 +66,7 @@
         
     {% if archive_detail.other_enhancements %}
     {# Other Enhancements #}
-    <h3 class="sub-header" id="select-os" style="display:block;">
+    <h3 class="sub-header" id="other-enhancements" style="display:block;">
       Other Enhancements
     </h3>
   
@@ -75,19 +75,19 @@
     {% endif %}
     
     {# Dependencies #}
-    <h3 class="sub-header" id="select-os" style="display:block;">
+    <h3 class="sub-header" id="dependencies" style="display:block;">
       Dependencies
     </h3>
     
     {{ archive_detail.dependencies|safe }}
     
     {# Contributors #}
-    <h3 class="sub-header" id="select-os" style="display:block;">
+    <h3 class="sub-header" id="contributors" style="display:block;">
       Contributors
     </h3>
     
-    <p class="text-content">
-      <strong>Contributors of This Release</strong>
+    <p class="text-content" style="font-weight:400;">
+      Contributors of This Release
     </p>
     <br />
       
@@ -131,8 +131,8 @@
     <br />
     
     {# Contributors of Previous Releases #}
-    <p class="text-content">
-      <strong>Contributors of Previous Releases</strong>
+    <p class="text-content" style="font-weight:400;">
+      Contributors of Previous Releases
     </p>
     <br />
     

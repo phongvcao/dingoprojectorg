@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
 {% block static %}
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download_base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/download_base.css" />
 
-    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/download_base.js"></script>
+    <script type="text/javascript" src="/static/jquery/download_base.js"></script>
     {% if subpage %}
     <style type="text/css">
       #subpage-{% if subpage %}{{ subpage }}{% endif %} {
@@ -15,9 +15,9 @@
 {% block sidebar %}
   <div id="sidebar">
     <ul class="list-links">
-      <li><a href="http://127.0.0.1:8000/download" class="doc-link" id="subpage-stable">Latest Stable</a></li>
-      <li><a href="http://127.0.0.1:8000/download/archives" class="doc-link" id="subpage-archives">Archives</a></li>
-      <li><a href="http://127.0.0.1:8000/download/development" class="doc-link" id="subpage-development">Development</a></li>
+      <li><a href="/download" class="doc-link" id="subpage-stable">Latest Stable</a></li>
+      <li><a href="/download/archives" class="doc-link" id="subpage-archives">Archives</a></li>
+      <li><a href="/download/development" class="doc-link" id="subpage-development">Development</a></li>
     </ul>
   </div>
 {% endblock %}

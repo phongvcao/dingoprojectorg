@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Page not found{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" type="text/css" href="http://dingo-project.org/static/css/404.css" />
+
+    {% if subpage %}
+    <style type="text/css">
+      #subpage-{% if subpage %}{{ subpage }}{% endif %} {
+        color: brown;
+      }
+    </style>{% endif %}
+{% endblock %}
+
+{% block sidebar %}
+  <div id="sidebar">
+    <ul class="list-links">
+      <li><a href="/about" class="doc-link" id="subpage-about">About</a></li>
+      <li><a href="/screenshots" class="doc-link" id="subpage-screenshots">Screenshots</a></li>
+      <li><a href="/download" class="doc-link" id="subpage-download">Download</a></li>
+      <li><a href="/contribute" class="doc-link" id="subpage-contribute">Contribute</a></li>
+      <li><a href="/help" class="doc-link" id="subpage-help">Help</a></li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div id="content">
+    <p class="text-content">
+      Sorry, the page you are looking for does not exist.
+    </p>
+  </div>
+{% endblock %}

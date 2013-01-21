@@ -3,44 +3,50 @@
 {% block title %}Dingo &rsaquo;&rsaquo; Download{% endblock %}
 
 {% block libs %}
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/download.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/download.css" />
   
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/code_base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/code_base.css" />
+    
+    <link rel="stylesheet" type="text/css" href="/static/css/latest_base.css" />
   
-    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/distro_detect.js"></script>
+    <script type="text/javascript" src="/static/jquery/distro_detect.js"></script>
   
-    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/download.js"></script>
+    <script type="text/javascript" src="/static/jquery/download.js"></script>
 {% endblock %}
 
 {% block content %}
   <div id="content">
+    <p id="latest-version">
+      Latest Stable Version: 0.5.1 - January 28, 2013
+    </p>
+  
     {# Select Your Operating System #}
     <h3 class="sub-header" id="select-os">
       1. Select Your Operating System
     </h3>
   
     <div class="download-button" id="distro-ubuntu">
-      <img src="http://127.0.0.1:8000/static/images/download/ubuntu.png" />
-      <h4 class="text-content"><strong>Ubuntu</strong></h4>
+      <img src="/static/images/download/ubuntu.png" />
+      <h4 class="text-content" style="font-weight:400;">Ubuntu</h4>
     </div>
   
     <div class="download-button" id="distro-fedora">
-      <img src="http://127.0.0.1:8000/static/images/download/fedora.png" />
-      <h4 class="text-content"><strong>Fedora</strong></h4>
+      <img src="/static/images/download/fedora.png" />
+      <h4 class="text-content" style="font-weight:400;">Fedora</h4>
     </div>
   
     <div class="download-button" id="distro-others">
-      <img src="http://127.0.0.1:8000/static/images/download/linux.png" />
-      <h4 class="text-content"><strong>Others</strong></h4>
+      <img src="/static/images/download/linux.png" />
+      <h4 class="text-content" style="font-weight:400;">Others</h4>
     </div>
     
     <div class="distro-details" id="install-ubuntu">
       {# Install on Ubuntu #}
-      <h3 class="sub-header">
+      <h3 class="sub-header" id="install-on-ubuntu">
         2. Install on Ubuntu
       </h3>
       
-      <img src="http://127.0.0.1:8000/static/images/download/download-on-ubuntu.png" />
+      <img src="/static/images/download/download-on-ubuntu.png" />
       
       <br />
       <br />
@@ -58,7 +64,7 @@
   
     <div class="distro-details" id="install-fedora">
       {# Install on Fedora #}
-      <h3 class="sub-header">
+      <h3 class="sub-header" id="install-on-fedora">
         2. Install on Fedora
       </h3>
   
@@ -73,7 +79,7 @@
   
     <div class="distro-details" id="install-others">
       {# Install on Other Distros #}
-      <h3 class="sub-header">
+      <h3 class="sub-header" id="install-on-others">
         2. Install on Other Distros
       </h3>
   
@@ -82,10 +88,10 @@
       </p>
       
       <ol class="text-content">
-        <li>Make sure you have installed <a href="http://127.0.0.1:8000/help/faq/#installation-2" target="_blank" class="doc-link">all the necessary dependencies</a></li>
+        <li>Make sure you have installed <a href="/help/faq/#installation-2" target="_blank" class="doc-link">all the necessary dependencies</a></li>
         <li>Download <a href="https://sourceforge.net/projects/dingomm/" target="_blank" class="doc-link">the latest stable Dingo source release</a> (see the section below)</li>
         <li>Extract the downloaded <span class="text-content-code">.tar.gz</span> file</li>
-        <li><span class="text-content-code">cd</span> into the project's directory and type the following command:</li>
+        <li><span class="text-content-code">cd</span> into the project's directory and type the following commands:</li>
       </ol>
     
       <pre class="code-snippet" style="height:95px;">
@@ -99,17 +105,17 @@
     <br />
     
     {# Source Releases #}
-    <h3 class="sub-header">
+    <h3 class="sub-header" id="source-releases">
       Source Releases
     </h3>
       
     <ul class="text-content" style="list-style-type:circle; padding:0; margin:0;">
-      <li>The latest stable release of Dingo is version 0.5.1 released on January 31, 2013</li>
+      <li class="text-content">The latest stable release of Dingo is version 0.5.1 released on January 31, 2013</li>
       <li><a href="https://sourceforge.net/projects/dingomm/" target="_blank" class="doc-link">Download Source Tarball</a></li>
     </ul>
     
     {# Beta Releases #}
-    <h3 class="sub-header">
+    <h3 class="sub-header" id="beta-releases">
       Beta Releases
     </h3>
   
@@ -118,12 +124,12 @@
     </ul>
     
     {# Development Version #}
-    <h3 class="sub-header">
+    <h3 class="sub-header" id="development-version">
       Development Version
     </h3>
   
     <p class="text-content">
-      Learn more about <a href="http://127.0.0.1:8000/download/development" class="doc-link">getting the development version</a>.
+      Learn more about <a href="/download/development" class="doc-link">getting the development version</a>.
     </p>
   </div>
 {% endblock %}

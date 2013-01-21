@@ -6,12 +6,16 @@
     <title>{% block title %}{% endblock %}</title>
     
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-     
-    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/base.css" />
     
-    <script type="text/javascript" src="http://127.0.0.1:8000/static/include/jquery/jquery-1.8.3.js"></script>
+    <link rel="shortcut icon" href="/static/images/base/favicon.png" type="image/x-icon" />
+    
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,300,300italic,400italic,500|Ubuntu+Mono' rel='stylesheet' type='text/css'>
+     
+    <link rel="stylesheet" type="text/css" href="/static/css/base.css" />
+    
+    <script type="text/javascript" src="/static/include/jquery/jquery-1.8.3.js"></script>
     {% block libs %}{% endblock %}
-    <script type="text/javascript" src="http://127.0.0.1:8000/static/jquery/base.js"></script>
+    <script type="text/javascript" src="/static/jquery/base.js"></script>
     {% block static %}{% endblock %}
     {% spaceless %}{% if button_id %}
     <style type="text/css">
@@ -25,19 +29,19 @@
   <body>
     <div id="nav-bar-div">
       <ul id="nav-bar">
-        <li class="nav-button"><a href="http://127.0.0.1:8000/" class="nav-link" id="nav-link-home">Home</a></li>
-        <li class="nav-button"><a href="http://127.0.0.1:8000/about" class="nav-link" id="nav-link-about">About</a></li>
+        <li class="nav-button"><a href="/" class="nav-link" id="nav-link-home">Home</a></li>
+        <li class="nav-button"><a href="/about" class="nav-link" id="nav-link-about">About</a></li>
         <li class="nav-button"><a href="#" class="nav-link" id="nav-link-screenshots">Screenshots</a></li>
-        <li class="nav-button"><a href="http://127.0.0.1:8000/download" class="nav-link" id="nav-link-download">Download</a></li>
-        <li class="nav-button"><a href="http://127.0.0.1:8000/contribute" class="nav-link" id="nav-link-contribute">Contribute</a></li>
-        <li class="nav-button"><a href="http://127.0.0.1:8000/help" class="nav-link" id="nav-link-help">Help</a></li>
-        <li id="logo-text"><a href="http://127.0.0.1:8000/"><img src="http://127.0.0.1:8000/static/images/base/dingoproject-logo-header.png" alt="dingoproject's large logo" id="large-logo"></a></li>      
+        <li class="nav-button"><a href="/download" class="nav-link" id="nav-link-download">Download</a></li>
+        <li class="nav-button"><a href="/contribute" class="nav-link" id="nav-link-contribute">Contribute</a></li>
+        <li class="nav-button"><a href="/help" class="nav-link" id="nav-link-help">Help</a></li>
+        <li id="logo-text"><a href="/"><img src="/static/images/base/dingoproject-logo-header.png" alt="dingoproject's large logo" id="large-logo"></a></li>      
       </ul>
     </div>
     
     <div id="author-homepage-div">
       <a href="http://www.phongvcao.com/" id="author-homepage-link" target="_blank">
-        <img src="http://127.0.0.1:8000/static/images/base/phongvcao.png" alt="Author's Image" id="author-image">
+        <img src="/static/images/base/phongvcao.png" alt="Author's Image" id="author-image">
         <span id="author-homepage-text">Author's Homepage &rarr;</span>
       </a>
     </div>
@@ -50,40 +54,40 @@
     
     <div id="footer-row">
       <ul id="footer-nav-logo">
-        <a href="http://127.0.0.1:8000/"><img src="http://127.0.0.1:8000/static/images/base/dingoproject-logo-footer.png" alt="dingoproject's small logo" id="small-logo"></a>
-        <p id="powered-by">Powered by <a href="http://www.gnome.org/" target="_blank">GNOME</a>, <a href="http://gstreamer.freedesktop.org/" target="_blank">GStreamer</a>, <a href="http://www.sqlite.org/" target="_blank">SQLite</a> and <a href="http://127.0.0.1:8000/about/#technical-summary">more!</a></p>
+        <a href="/"><img src="/static/images/base/dingoproject-logo-footer.png" alt="dingoproject's small logo" id="small-logo"></a>
+        <p id="powered-by">Powered by <a href="http://www.gnome.org/" target="_blank">GNOME</a>, <a href="http://gstreamer.freedesktop.org/" target="_blank">GStreamer</a>, <a href="http://www.sqlite.org/" target="_blank">SQLite</a> and <a href="/about/#technical-summary">more!</a></p>
       </ul>
     
       <ul class="footer-nav">
-        <li><a href="http://127.0.0.1:8000/about" class="footer-heading">About</a></li>
-        <li><a href="http://127.0.0.1:8000/about/contact">Contact</a></li>
-        <li><a href="http://127.0.0.1:8000/about/contact/#hirings">Hirings</a></li>
-        <li><a href="http://127.0.0.1:8000/about/features">Features</a></li>
-        <li><a href="http://127.0.0.1:8000/about/license">License</a></li>
+        <li><a href="/about" class="footer-heading">About</a></li>
+        <li><a href="/about/contact">Contact</a></li>
+        <li><a href="/about/contact/#hirings">Hirings</a></li>
+        <li><a href="/about/features">Features</a></li>
+        <li><a href="/about/license">License</a></li>
       </ul>
       <ul class="footer-nav">
-        <li><a href="http://127.0.0.1:8000/screenshots" class="footer-heading">Screenshots</a></li>
-        <li><a href="http://127.0.0.1:8000/screenshots/#ubuntu">Ubuntu</a></li>
-        <li><a href="http://127.0.0.1:8000/screenshots/#fedora">Fedora</a></li>    
+        <li><a href="/screenshots" class="footer-heading">Screenshots</a></li>
+        <li><a href="/screenshots/#ubuntu">Ubuntu</a></li>
+        <li><a href="/screenshots/#fedora">Fedora</a></li>    
       </ul>
       <ul class="footer-nav">
-        <li><a href="http://127.0.0.1:8000/download" class="footer-heading">Download</a></li>
-        <li><a href="http://127.0.0.1:8000/download">Latest Stable</a></li>
-        <li><a href="http://127.0.0.1:8000/download/archives">Archives</a></li>
-        <li><a href="http://127.0.0.1:8000/download/development">Development</a></li>
+        <li><a href="/download" class="footer-heading">Download</a></li>
+        <li><a href="/download">Latest Stable</a></li>
+        <li><a href="/download/archives">Archives</a></li>
+        <li><a href="/download/development">Development</a></li>
       </ul>
       <ul class="footer-nav">
-        <li><a href="http://127.0.0.1:8000/contribute" class="footer-heading">Contribute</a></li>
-        <li><a href="http://127.0.0.1:8000/contribute/report-bugs">Report Bugs</a></li>
-        <li><a href="http://127.0.0.1:8000/contribute/translate">Translate Dingo</a></li>
-        <li><a href="http://127.0.0.1:8000/contribute/design-icons">Design Icons</a></li>
-        <li><a href="http://127.0.0.1:8000/contribute/write-code">Write Code</a></li>
+        <li><a href="/contribute" class="footer-heading">Contribute</a></li>
+        <li><a href="/contribute/report-bugs">Report Bugs</a></li>
+        <li><a href="/contribute/translate">Translate Dingo</a></li>
+        <li><a href="/contribute/design-icons">Design Icons</a></li>
+        <li><a href="/contribute/write-code">Write Code</a></li>
       </ul>
       <ul class="footer-nav">
-        <li><a href="http://127.0.0.1:8000/help" class="footer-heading">Help</a></li>
-        <li><a href="http://127.0.0.1:8000/help/faq">FAQ</a></li>
-        <li><a href="http://127.0.0.1:8000/help/#mailing-list">Mailing List</a></li>
-        <li><a href="http://127.0.0.1:8000/help/#irc-chat">IRC Chat</a></li>
+        <li><a href="/help" class="footer-heading">Help</a></li>
+        <li><a href="/help/faq">FAQ</a></li>
+        <li><a href="/help/#mailing-list">Mailing List</a></li>
+        <li><a href="/help/#irc-chat">IRC Chat</a></li>
       </ul>
     </div>
     

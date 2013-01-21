@@ -9,10 +9,14 @@ ADMINS = (
 
 MANAGERS = ADMINS
 
+from os.path import expanduser
+
+HOME_DIR = expanduser("~")
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '/home/phongvcao/dingoprojectorg/dingoprojectorg/database/dingo-archives.db',                      # Or path to database file if using sqlite3.
+        'NAME': HOME_DIR + '/dingoprojectorg/dingoprojectorg/database/dingo-archives.db',                      # Or path to database file if using sqlite3.
         'USER': '',                      # Not used with sqlite3.
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
@@ -67,6 +71,7 @@ import os
 # Additional locations of static files
 STATICFILES_DIRS = (
     os.path.join(os.path.realpath(os.path.dirname(__file__)), 'static'),
+    HOME_DIR + '/dingoprojectorg/dingoprojectorg/static',
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
@@ -106,14 +111,14 @@ ROOT_URLCONF = 'dingoprojectorg.urls'
 WSGI_APPLICATION = 'dingoprojectorg.wsgi.application'
 
 TEMPLATE_DIRS = (
-    '/home/phongvcao/dingoprojectorg/dingoprojectorg/templates',
+    HOME_DIR + '/dingoprojectorg/dingoprojectorg/templates',
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
 
 import sys
-sys.path.append('/home/phongvcao/dingoprojectorg/dingoprojectorg/apps')
+sys.path.append(HOME_DIR + '/dingoprojectorg/dingoprojectorg/apps')
 
 INSTALLED_APPS = (
     'django.contrib.auth',

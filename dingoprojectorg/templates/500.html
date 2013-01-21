@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Dingo &rsaquo;&rsaquo; Server Error{% endblock %}
+
+{% block static %}
+    <link rel="stylesheet" type="text/css" href="http://dingo-project.org/static/css/505.css" />
+
+    {% if subpage %}
+    <style type="text/css">
+      #subpage-{% if subpage %}{{ subpage }}{% endif %} {
+        color: brown;
+      }
+    </style>{% endif %}
+{% endblock %}
+
+{% block sidebar %}
+  <div id="sidebar">
+    <ul class="list-links">
+      <li><a href="/about" class="doc-link" id="subpage-about">About</a></li>
+      <li><a href="/screenshots" class="doc-link" id="subpage-screenshots">Screenshots</a></li>
+      <li><a href="/download" class="doc-link" id="subpage-download">Download</a></li>
+      <li><a href="/contribute" class="doc-link" id="subpage-contribute">Contribute</a></li>
+      <li><a href="/help" class="doc-link" id="subpage-help">Help</a></li>
+    </ul>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div id="content">
+    <p class="text-content">
+      <strong>Internal Server Error</strong>
+    </p>
+    
+    <p class="text-content">
+      Please report this server error as soon as possible to Dingo Home Page's maintainers by <a href="https://github.com/phongvcao/dingoprojectorg/issues" class="doc-link" target="_blank">opening an issue on our Github bugs tracker</a>! We will take a look at the error and fix it as soon as possible!
+    </p>
+  </div>
+{% endblock %}

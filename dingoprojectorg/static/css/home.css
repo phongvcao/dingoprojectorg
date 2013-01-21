@@ -52,25 +52,27 @@
 
 .slides_slide-text {
   font-size: 40px;
-  font-family: UbuntuLight, Arial, san-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 300;
   float: left;
-  width: 370px;
+  width: 365px;
   display: block;
   padding-top: 30px;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 
 .slides_slide-capture {
   font-size: 20px;
-  font-family: UbuntuLight, Arial, san-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 300;
   float: left;
-  width: 370px;
+  width: 365px;
   display: block;
   line-height: 30px;
   padding-top: 20px;
   padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 20px;
   padding-bottom: 40px;
 }
 
@@ -92,7 +94,8 @@
   text-shadow: rgba(0,0,0,.4) 0 1px 0;
   color: #ffffff;
   font-size: 18px;
-  font-family: UbuntuRegular, Arial, san-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 400;
   text-decoration: none;
   vertical-align: middle;
 }
@@ -110,7 +113,8 @@
 
 /* Quick access container */
 .quick-access {
-  font-family: UbuntuLight, Arial, san-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 300;
   font-size: 16px;
   width: 320px;
   height: 300px;
@@ -128,18 +132,21 @@
 #quick-access-middle {
   margin-right: 20px;
   margin-left: 20px;
+  font-weight: 300;
 }
 
 .quick-access-header {
   font-size: 21px;
   padding: 25px 20px 20px 20px;
   color: #407023;
+  font-weight: 300;
 }
 
 .quick-access-text {
   padding: 0px 20px 20px 20px;
   line-height: 24px;
   color: #505050;
+  font-weight: 300;
 }
 
 .quick-access-link {
@@ -147,4 +154,5 @@
   color: #407023;
   margin-left: 20px;
   font-style: italic;
+  font-weight: 300;
 }

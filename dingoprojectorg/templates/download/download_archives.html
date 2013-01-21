@@ -3,22 +3,27 @@
 {% block title %}Dingo &rsaquo;&rsaquo; Archives{% endblock %}
 
 {% block libs %}
+    <link rel="stylesheet" type="text/css" href="/static/css/latest_base.css" />
 {% endblock %}
 
 {% block content %}
   <div id="content">
-    <p class="text-content" style="padding-top:35px; margin-bottom:-10px;">
-      To download and install the latest version, go to the <a href="http://127.0.0.1:8000/download/" class="doc-link">Download page</a>
+    <p id="latest-version">
+      Latest Stable Version: 0.5.1 - January 28, 2013
+    </p>
+    
+    <p class="text-content" style="padding-top:25px; margin-bottom:-10px;">
+      To download and install the latest stable version, go to the <a href="/download/" class="doc-link">Download page</a>
     </p>
   
     {# Releases #}
-    <h3 class="sub-header" id="select-os">
+    <h3 class="sub-header" id="releases">
       Releases
     </h3>
   
     <ul class="text-content" style="list-style-type:circle; padding:0; margin:0;">
       {% for archive in archives_list %}
-      <li><a href="http://127.0.0.1:8000/download{{ archive.get_absolute_url }}" class="doc-link">Dingo {{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}</a></li>
+      <li><a href="/download{{ archive.get_absolute_url }}" class="doc-link">Dingo {{ archive.major }}.{{ archive.minor }}.{{ archive.micro }}</a></li>
       {% endfor %}
     </ul>
   </div>

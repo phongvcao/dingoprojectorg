@@ -3,20 +3,20 @@
 {% block title %}Dingo &rsaquo;&rsaquo; FAQ{% endblock %}
 
 {% block libs %}
-  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/libs_base.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/libs_base.css" />
   
-  <link rel="stylesheet" type="text/css" href="http://127.0.0.1:8000/static/css/code_base.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/code_base.css" />
 {% endblock %}
 
 {% block content %}
   <div id="content">
     {# Installation #}
-    <h3 class="sub-header" id="translate">
+    <h3 class="sub-header" id="installation">
       Installation
     </h3>
   
-    <p class="text-content">
-      <strong>1. Why isn't Dingo installation package available on my platform?</strong>
+    <p class="text-content" style="font-weight:400;">
+      1. Why isn't Dingo installation package available on my platform?
     </p>
     
     <p class="text-content">
@@ -26,17 +26,17 @@
     <br />
     
     <p class="text-content">
-       If Dingo installation package is not yet available on your system you can either <a href="#" class="doc-link">install Dingo from source</a>, send a package-building request email to <a href="#" target="_blank" class="doc-link">our mailing-list</a> or build an installation package for your own system from <a href="#" target="_blank" class="doc-link">our latest source code</a>.
+       If Dingo installation package is not yet available on your system you can either <a href="#" class="doc-link">install Dingo from source</a>, send a package-building request email to <a href="http://dingo-project.org/mailman/listinfo/dingo-list_dingo-project.org" target="_blank" class="doc-link">our mailing-list</a> or build an installation package for your own system from <a href="#" target="_blank" class="doc-link">our latest source code</a>.
     </p>
     
     <br />
     
-    <p class="text-content" id="installation-2">
-      <strong>2. What are the required libraries to build Dingo?</strong>
+    <p class="text-content" id="installation-2" style="font-weight:400;">
+      2. What are the required libraries to build Dingo?
     </p>
     
     <p class="text-content">
-      The libraries required to build Dingo along with their versions can also be found on <a href="http://127.0.0.1:8000/download/development" class="doc-link">our Download page - Development section</a>. Here are what you need to build the currently latest stable release:
+      The libraries required to build Dingo along with their versions can also be found on <a href="/download/development" class="doc-link">our Download page - Development section</a>. Here are what you need to build the currently latest stable release:
     </p>
     
     <p class="text-content">
@@ -107,43 +107,43 @@
     
     <br />
     
-    <p class="text-content">
-      <strong>3. Where can I find libmediainfo?</strong>
+    <p class="text-content" style="font-weight:400;">
+      3. Where can I find libmediainfo?
     </p>
     
     <p class="text-content">
-      If you are using Ubuntu or any Ubuntu-based distro such as Linux Mint, <strong>libmediainfo</strong> should be available on your Software Center. If not you can always add <a href="https://launchpad.net/~shiki/+archive/mediainfo" target="_blank" class="doc-link">the Official MediaInfo PPA</a> into your Software Sources. <strong>OMG! Ubuntu</strong> has an excellent tutorial about <a href="http://www.omgubuntu.co.uk/how-to-add-a-ppa-to-software-sources-in-ubuntu" target="_blank" class="doc-link">How to add a PPA to Software Sources in Ubuntu</a>. Things might look a little different in your system but they should be somewhat similar.
-    </p>
-    
-    <br />
-    
-    <p class="text-content">
-      With Fedora we distribute <strong>libmediainfo</strong> along with the installation package, but it will only be the minimum version required to build that particular release of Dingo. If you want a newer <strong>libmediainfo</strong>, you can always <a href="http://mediainfo.sourceforge.net/en/Download/Fedora" target="_blank" class="doc-link">download the latest RPMs on MediaInfo Homepage</a>.
+      If you are using Ubuntu or any Ubuntu-based distro such as Linux Mint, <span style="font-weight:400;">libmediainfo</span> should be available on your Software Center. If not you can always add <a href="https://launchpad.net/~shiki/+archive/mediainfo" target="_blank" class="doc-link">the Official MediaInfo PPA</a> into your Software Sources. <span style="font-weight:400;">OMG! Ubuntu</span> has an excellent tutorial about <a href="http://www.omgubuntu.co.uk/how-to-add-a-ppa-to-software-sources-in-ubuntu" target="_blank" class="doc-link">How to add a PPA to Software Sources in Ubuntu</a>. Things might look a little different in your system but they should be somewhat similar.
     </p>
     
     <br />
     
     <p class="text-content">
-      For all other systems we recommend checking out <a href="http://mediainfo.sourceforge.net/en/Download" target="_blank" class="doc-link">MediaInfo Homepage</a> for your <strong>libmediainfo</strong> installation.
+      With Fedora we distribute <span style="font-weight:400;">libmediainfo</span> along with the installation package, but it will only be the minimum version required to build that particular release of Dingo. If you want a newer <span style="font-weight:400;">libmediainfo</span>, you can always <a href="http://mediainfo.sourceforge.net/en/Download/Fedora" target="_blank" class="doc-link">download the latest RPMs on MediaInfo Homepage</a>.
     </p>
     
     <br />
     
     <p class="text-content">
-      <strong>4. Can Dingo be installed on Windows and Mac OSX?</strong>
+      For all other systems we recommend checking out <a href="http://mediainfo.sourceforge.net/en/Download" target="_blank" class="doc-link">MediaInfo Homepage</a> for your <span style="font-weight:400;">libmediainfo</span> installation.
+    </p>
+    
+    <br />
+    
+    <p class="text-content" style="font-weight:400;">
+      4. Can Dingo be installed on Windows and Mac OSX?
     </p>
     
     <p class="text-content">
-      At the moment the answer is <strong>No</strong> due to the fact that some Dingo's dependencies (such as gtkmm and gstreamermm) only support Linux. Please see <a href="http://127.0.0.1:8000/about/" class="doc-link">the About page</a> for more information.
+      At the moment the answer is <span style="font-weight:400;">No</span> due to the fact that some Dingo's dependencies (such as gtkmm and gstreamermm) only support Linux. Please see <a href="/about/" class="doc-link">the About page</a> for more information.
     </p>
     
     {# Features #}
-    <h3 class="sub-header" id="report-bugs">
+    <h3 class="sub-header" id="features">
       Features
     </h3>
   
-    <p class="text-content">
-      <strong>1. How and where does Dingo get its cover art?</strong>
+    <p class="text-content" style="font-weight:400;">
+      1. How and where does Dingo get its cover art?
     </p>
     
     <p class="text-content">
@@ -152,8 +152,8 @@
     
     <br />
   
-    <p class="text-content">
-      <strong>2. Does Dingo support audio/video format X (mp3, aac, mpeg ,etc)?</strong>
+    <p class="text-content" style="font-weight:400;">
+      2. Does Dingo support audio/video format X (mp3, aac, mpeg ,etc)?
     </p>
     
     <p class="text-content">
@@ -162,8 +162,8 @@
     
     <br />
   
-    <p class="text-content">
-      <strong>3. I can't play my audio and/or video files. What is going wrong?</strong>
+    <p class="text-content" style="font-weight:400;">
+      3. I can't play my audio and/or video files. What is going wrong?
     </p>
     
     <p class="text-content">
@@ -179,13 +179,13 @@
     <br />
     
     <p class="text-content">
-      If the two methods above do not work please <a href="http://127.0.0.1:8000/contribute/report-bugs/" target="_blank" class="doc-link">open a bug in our Github issues tracker</a>. We will take a look at it and get back to you as soon as possible.
+      If the two methods above do not work please <a href="/contribute/report-bugs/" target="_blank" class="doc-link">open a bug in our Github issues tracker</a>. We will take a look at it and get back to you as soon as possible.
     </p>
     
     <br />
     
-    <p class="text-content">
-      <strong>4. I can play audios, but with videos only the sound is played and the images are not shown. What did I do wrong?</strong>
+    <p class="text-content" style="font-weight:400;">
+      4. I can play audios, but with videos only the sound is played and the images are not shown. What did I do wrong?
     </p>
     
     <p class="text-content">
@@ -195,16 +195,16 @@
     <br />
     
     <p class="text-content">
-      If the above step does not solve the problem please <a href="http://127.0.0.1:8000/contribute/report-bugs/" target="_blank" class="doc-link">open a bug in our Github issues tracker</a>. We will take a look at it and get back to you as soon as possible.
+      If the above step does not solve the problem please <a href="/contribute/report-bugs/" target="_blank" class="doc-link">open a bug in our Github issues tracker</a>. We will take a look at it and get back to you as soon as possible.
     </p>
   
     {# Technical #}
-    <h3 class="sub-header" id="translate">
+    <h3 class="sub-header" id="technical">
       Technical
     </h3>
   
-    <p class="text-content">
-      <strong>1. Where does Dingo store its configuration/database files?</strong>
+    <p class="text-content" style="font-weight:400;">
+      1. Where does Dingo store its configuration/database files?
     </p>
     
     <p class="text-content">
@@ -219,8 +219,8 @@
     
     <br />
     
-    <p class="text-content">
-      <strong>2. Where does Dingo store its cache files?</strong>
+    <p class="text-content" style="font-weight:400;">
+      2. Where does Dingo store its cache files?
     </p>
     
     <p class="text-content">

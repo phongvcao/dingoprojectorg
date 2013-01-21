@@ -10,7 +10,7 @@
 /* Content Container */
 #content-container {
   width: 1000px;
-  padding-bottom: 40px;
+  padding-bottom: 225px;
   -moz-box-shadow: 1px 1px 3px 3px #ccc;
   -webkit-box-shadow: 1px 1px 3px 3px #ccc;
   box-shadow: 1px 1px 3px 3px #ccc;
@@ -18,7 +18,7 @@
 
 .sub-header {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: bold;
   line-height: 15px;
   padding-top: 40px;
   padding-bottom: 10px;
@@ -41,7 +41,7 @@
 .doc-link:link, .doc-link:visited  {
   text-decoration: none;
   color: #407023;
-  font-weight: 400;
+  font-weight: bold;
   font-size: 14px;
 }
 
@@ -66,19 +66,13 @@ ul .doc-link {
   padding-top: 10px;
 }
 
-.text-content, .text-content-body {
-  font-weight: 300;
+.text-content-intro, .text-content-body, .text-content {
   font-size: 14px;
   line-height: 25px;
 }
 
 .text-content-intro {
-  font-size: 14px;
-  line-height: 25px;
-}
-
-.text-content-intro {
-  font-weight: 400;
+  font-weight: bold;
   padding-bottom: 10px;
   padding-top: 10px;
 }

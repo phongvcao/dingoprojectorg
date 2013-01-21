@@ -58,9 +58,9 @@
 - DONE: Edit Dingo's homepage address on SourceForge.net and Github
 
 - DONE: Replace @font-face with Google Web Fonts
+- DONE: Fix "Get Dingo!" ugly appearance in IE 9
 
 4. Monday 01/21/13
-- Fix "Get Dingo!" ugly appearance in IE 9
 
 - Create a folder call "deploy" on the same level with manage.py
   and put all the necessary deployment files there (.htaccess, etc.)

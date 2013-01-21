@@ -67,9 +67,17 @@ body {
 
 .nav-link:hover {
   background-color: #558a35;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: white;
+  text-shadow: 0px 1px black;
+  display: inline-block;
 }
 
 .nav-link:visited {
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   color: white;
   text-shadow: 0px 1px black;

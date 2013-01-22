@@ -2,7 +2,16 @@
 
 {% block title %}Dingo &rsaquo;&rsaquo; Screenshots{% endblock %}
 
-{% block libs %}{% endblock %}
+{% block libs %}
+  <link rel="stylesheet" type="text/css" href="/static/css/screenshots.css" />
+  
+  <script type="text/javascript" src="/static/include/galleriffic/jquery.galleriffic.js"></script>
+
+  <!-- Optionally include jquery.history.js for history support -->
+  <script type="text/javascript" src="/static/include/galleriffic/jquery.history.js"></script>
+  
+  <script type="text/javascript" src="/static/include/galleriffic/jquery.opacityrollover.js"></script>
+{% endblock %}
 
 {% block static %}
   <link rel="stylesheet" type="text/css" href="/static/css/screenshots.css" />
@@ -11,4 +20,275 @@
 {% endblock %}
 
 {% block content %}
+  <div class="content">
+    <div id="slideshow"></div>
+    <div id="caption"></div>
+    <div id="thumbs">
+      <!-- Ubuntu -->
+      <ul class="thumbs noscript">
+        <li>
+          <a class="thumb" name="dingo-sound-menu-integration.png" href="/static/images/screenshots/scaled/dingo-sound-menu-integration.png" title="Dingo's SoundMenu Integration">
+            <img src="/static/images/screenshots/thumbnails/dingo-sound-menu-integration.png" alt="Dingo's SoundMenu Integration" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-single-track.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-edit-single-track.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-repeat-section.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-repeat-section.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-all-tracks.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-edit-all-tracks.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-video-playback.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-video-playback.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-tracks-membership-manager.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-tracks-membership-manager.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-lyrics.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-lyrics.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-shuffle.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-shuffle.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-settings-save-to-file.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-settings-save-to-file.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-fullscreen-mode.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-fullscreen-mode.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-playlist-manager.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-playlist-manager.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-autosaved.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-autosaved.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-font-chooser.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-font-chooser.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+      </ul>
+      
+      <!-- Fedora -->      
+      <ul class="thumbs noscript">
+        <li>
+          <a class="thumb" name="dingo-sound-menu-integration.png" href="/static/images/screenshots/scaled/dingo-sound-menu-integration.png" title="Dingo's SoundMenu Integration">
+            <img src="/static/images/screenshots/thumbnails/dingo-sound-menu-integration.png" alt="Dingo's SoundMenu Integration" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-single-track.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-edit-single-track.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-repeat-section.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-repeat-section.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-all-tracks.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-edit-all-tracks.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-video-playback.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-video-playback.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-tracks-membership-manager.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-tracks-membership-manager.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-lyrics.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-lyrics.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-shuffle.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-shuffle.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-settings-save-to-file.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-settings-save-to-file.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-fullscreen-mode.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-fullscreen-mode.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-playlist-manager.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-playlist-manager.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-autosaved.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-autosaved.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+        
+        <li>
+          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-font-chooser.png" title="your image title">
+            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-font-chooser.png" alt="your image title again for graceful degradation" />
+          </a>
+          
+          <div class="caption">
+            (Any html can go here)
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
 {% endblock %}

@@ -17,13 +17,13 @@
     {% block libs %}{% endblock %}
     <script type="text/javascript" src="/static/jquery/base.js"></script>
     {% block static %}{% endblock %}
-    {% spaceless %}{% if button_id %}
+    {% if button_id %}
     <style type="text/css">
       #nav-link-{{ button_id }} {
         background-color: #558a35;
       }
     </style>
-    {% endif %}{% endspaceless %}
+    {% endif %}
   </head>
   
   <body>
@@ -31,7 +31,7 @@
       <ul id="nav-bar">
         <li class="nav-button"><a href="/" class="nav-link" id="nav-link-home">Home</a></li>
         <li class="nav-button"><a href="/about" class="nav-link" id="nav-link-about">About</a></li>
-        <li class="nav-button"><a href="#" class="nav-link" id="nav-link-screenshots">Screenshots</a></li>
+        <li class="nav-button"><a href="/screenshots" class="nav-link" id="nav-link-screenshots">Screenshots</a></li>
         <li class="nav-button"><a href="/download" class="nav-link" id="nav-link-download">Download</a></li>
         <li class="nav-button"><a href="/contribute" class="nav-link" id="nav-link-contribute">Contribute</a></li>
         <li class="nav-button"><a href="/help" class="nav-link" id="nav-link-help">Help</a></li>

@@ -156,6 +156,7 @@ body {
   list-style-type: none;
   text-align: left;
   padding-top: 15px;
+  margin-right: 10px;
 }
 
 #small-logo {
@@ -175,7 +176,7 @@ body {
 
 /* Copyright notice */
 #copyright-notice {
-  padding-top: 25px;
+  padding-top: 35px;
   font-family: 'Ubuntu', Arial, sans-serif;
   font-weight: 400;
   font-size: 10px;

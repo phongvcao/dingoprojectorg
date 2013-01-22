@@ -61,12 +61,16 @@
 - DONE: Fix "Get Dingo!" ugly appearance in IE 9
 
 4. Monday 01/21/13
+- DONE: Footer - Increase distance between logo and main sitemap
+        and also between copyright notice and main sitemap.
+
+- Create screenshots.html (No need for screenshots_base.html)
+  (Divide into 2 sections)
 
 - Create a folder call "deploy" on the same level with manage.py
   and put all the necessary deployment files there (.htaccess, etc.)
 
 - Create about_features.html
-- Create screenshots.html (No need for screenshots_base.html)
 
 - Finish packing packages & upload to all necessary websites
 - Edit all "#" links in .html files to the working ones
@@ -76,8 +80,9 @@
 - Add Google Analytics <script> and webmaster before releasing.
 - Finish up INSTALL Notes (Add the installation instruction).
 
-- Implement Ajax
 - Django Admin interface on http://dingo-project.org/
 
 - Copy the scalable version of dingoprojectorg.svg to dingo's
   package
+
+- Implement Ajax

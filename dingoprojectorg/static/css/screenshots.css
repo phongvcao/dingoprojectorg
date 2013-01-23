@@ -1,16 +1,16 @@
 #content {
   font-family: 'Ubuntu', Arial, sans-serif;
   font-weight: 300;
+  padding-top: 90px;
   text-align: left;
-  width: 1000px;
+  width: 965px;
   padding-left: 15px;
-  margin-top: 300px;
 }
 
 /* Content Container */
 #content-container {
   width: 1000px;
-  padding-bottom: 500px;
+  padding-bottom: 40px;
   -moz-box-shadow: 1px 1px 3px 3px #ccc;
   -webkit-box-shadow: 1px 1px 3px 3px #ccc;
   box-shadow: 1px 1px 3px 3px #ccc;
@@ -21,7 +21,7 @@
   font-weight: 400;
   line-height: 15px;
   padding-top: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   color: #407023;
   border-bottom-style: solid;
   border-bottom-color: gray;
@@ -87,14 +87,24 @@ ul .doc-link {
   padding-left: 30px;
 }
 
-/* Galleriffic */
-.thumb {
-  float: left;
-  margin: 7px 7px 7px 7px;
-  border: 1px solid #ccc;
-  padding: 3px;
+/* fancyBox */
+.fancybox-container {
+  padding-top: 5px;
 }
 
-ul.thumbs li.selected a.thumb {
-  background: #407023;
+.fancybox-ubuntu img, .fancybox-fedora img {
+  margin: 1px 1px 1px 1px;
+  border: 1px solid #ccc;
+  padding: 3px;
+  opacity: 0.75;
+}
+
+.fancybox-title {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.fancybox-title-float-wrap .child {
+  font-weight: 500;
 }

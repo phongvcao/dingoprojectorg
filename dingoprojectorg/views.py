@@ -19,7 +19,7 @@ def about_page_view(request):
     return render_to_response("about/about.html", { "button_id": "about" })
 
 def about_subpage_view(request, subpage):
-    if subpage in ("contact", "license"):
+    if subpage in ("contact", "license", "features"):
         return render_to_response("about/about_" + subpage + ".html", { "button_id": "about", "subpage": subpage })
     else:
         raise Http404()

@@ -1,5 +1,51 @@
 $(document).ready(function() {
-  $('#thumbs ul.thumbs li').opacityrollover({
+  $(".fancybox-ubuntu").fancybox({
+    autoSize : false,
+    closeClick : false,
+    openEffect : 'elastic',
+    closeEffect	: 'elastic',
+    helpers : {
+      title : {
+        type: 'float'
+      },
+      thumbs : {
+        width : 50,
+        height : 50
+      }
+    }
+  });
+  
+  $(".fancybox-fedora").fancybox({
+    autoSize : false,
+    closeClick : false,
+    openEffect : 'elastic',
+    closeEffect	: 'elastic',
+    helpers : {
+      title : {
+        type: 'float'
+      },
+      thumbs : {
+        width : 50,
+        height : 50
+      }
+    }
+  });
+  
+  $('.fancybox-ubuntu img, .fancybox-fedora img').hover(function() {
+    $(this).animate({'opacity': '1'}, 300);
+  },
+  function() {
+    $(this).animate({'opacity': '0.75'}, 300);
+  });
+  
+  /* opacityrollover({
+    mouseOutOpacity: 0.67,
+    mouseOverOpacity: 1.0,
+    fadeSpeed: 'fast',
+    exemptionSelector: '.selected'
+  }); */
+
+  /* $('#thumbs ul.thumbs li').opacityrollover({
     mouseOutOpacity: 0.67,
     mouseOverOpacity: 1.0,
     fadeSpeed: 'fast',
@@ -19,12 +65,12 @@ $(document).ready(function() {
     //loadingContainerSel: '#loading', // The CSS selector for the element within which should be shown when an image is loading
     renderSSControls: false, // Specifies whether the slideshow's Play and Pause links should be rendered
     renderNavControls: false, // Specifies whether the slideshow's Next and Previous links should be rendered
-    /* playLinkText: 'Play',
+    playLinkText: 'Play',
     pauseLinkText: 'Pause',
     prevLinkText: 'Previous',
     nextLinkText: 'Next',
     nextPageLinkText: 'Next &rsaquo;',
-    prevPageLinkText: '&lsaquo; Prev', */
+    prevPageLinkText: '&lsaquo; Prev',
     enableHistory: false, // Specifies whether the url's hash and the browser's history cache should update when the current slideshow image changes
     enableKeyboardNavigation: true, // Specifies whether keyboard navigation is enabled
     autoStart: false, // Specifies whether the slideshow should be playing or paused when the page first loads
@@ -36,15 +82,15 @@ $(document).ready(function() {
           .eq(prevIndex).fadeTo('fast', 0.67).end()
           .eq(nextIndex).fadeTo('fast', 1.0);
     }, // accepts a delegate like such: function(prevIndex, nextIndex) { ... }
-    /* onTransitionOut: undefined, // accepts a delegate like such: function(slide, caption, isSync, callback) { ... }
-    onTransitionIn: undefined, // accepts a delegate like such: function(slide, caption, isSync) { ... } */
+    onTransitionOut: undefined, // accepts a delegate like such: function(slide, caption, isSync, callback) { ... }
+    onTransitionIn: undefined, // accepts a delegate like such: function(slide, caption, isSync) { ... }
     onPageTransitionOut: function(callback) {
       this.fadeTo('fast', 0.0, callback);
     }, // accepts a delegate like such: function(callback) { ... }
     onPageTransitionIn: function() {
       this.fadeTo('fast', 1.0);
     } // accepts a delegate like such: function() { ... }
-    /* onImageAdded: undefined, // accepts a delegate like such: function(imageData, $li) { ... }
-    onImageRemoved: undefined  // accepts a delegate like such: function(imageData, $li) { ... } */
-  });
+    onImageAdded: undefined, // accepts a delegate like such: function(imageData, $li) { ... }
+    onImageRemoved: undefined  // accepts a delegate like such: function(imageData, $li) { ... }
+  }); */
 });

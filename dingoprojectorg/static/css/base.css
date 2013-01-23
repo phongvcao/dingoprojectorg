@@ -20,6 +20,15 @@ img {
 }
 
 body {
+  /* 
+   * blank for now
+   * because we use #main-body
+   * instead (for compability 
+   * with fancyBox 
+   */
+}
+
+#main-body {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;

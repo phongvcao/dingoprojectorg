@@ -3,14 +3,24 @@
 {% block title %}Dingo &rsaquo;&rsaquo; Screenshots{% endblock %}
 
 {% block libs %}
-  <link rel="stylesheet" type="text/css" href="/static/css/screenshots.css" />
-  
-  <script type="text/javascript" src="/static/include/galleriffic/jquery.galleriffic.js"></script>
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="/static/include/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
 
-  <!-- Optionally include jquery.history.js for history support -->
-  <script type="text/javascript" src="/static/include/galleriffic/jquery.history.js"></script>
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="/static/include/fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+
+  <script type="text/javascript" src="/static/include/fancybox/source/jquery.fancybox.pack.js"></script>
+
+  <!-- Optionally add helpers - button, thumbnail and/or media -->
+  <link rel="stylesheet" href="/static/include/fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
   
-  <script type="text/javascript" src="/static/include/galleriffic/jquery.opacityrollover.js"></script>
+  <script type="text/javascript" src="/static/include/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+  
+  <script type="text/javascript" src="/static/include/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+  <link rel="stylesheet" href="/static/include/fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+  
+  <script type="text/javascript" src="/static/include/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
 {% endblock %}
 
 {% block static %}
@@ -20,275 +30,112 @@
 {% endblock %}
 
 {% block content %}
-  <div class="content">
-    <div id="slideshow"></div>
-    <div id="caption"></div>
-    <div id="thumbs">
-      <!-- Ubuntu -->
-      <ul class="thumbs noscript">
-        <li>
-          <a class="thumb" name="dingo-sound-menu-integration.png" href="/static/images/screenshots/scaled/dingo-sound-menu-integration.png" title="Dingo's SoundMenu Integration">
-            <img src="/static/images/screenshots/thumbnails/dingo-sound-menu-integration.png" alt="Dingo's SoundMenu Integration" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-single-track.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-edit-single-track.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-repeat-section.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-repeat-section.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-all-tracks.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-edit-all-tracks.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-video-playback.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-video-playback.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-tracks-membership-manager.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-tracks-membership-manager.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-lyrics.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-lyrics.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-shuffle.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-shuffle.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-settings-save-to-file.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-settings-save-to-file.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-fullscreen-mode.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-fullscreen-mode.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-playlist-manager.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-playlist-manager.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-autosaved.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-autosaved.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-font-chooser.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-font-chooser.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-      </ul>
+  <div id="content">
+    {# Ubuntu #}
+    <h3 class="sub-header" id="ubuntu" style="padding-left: 1px; margin-top: -10px;">
+      Dingo 0.5.1 - Ubuntu 12.10 (Quantal Quetzal)
+    </h3>
+    
+    <!-- 
+    dingo-copyright-notice.png
+    dingo-video-playback.png
+    dingo-fullscreen-mode.png
+    dingo-sound-menu-integration.png
+    dingo-tracks-membership-manager.png
+    dingo-repeat-section.png
+    dingo-edit-single-track.png
+    dingo-edit-all-tracks.png
+    dingo-playlist-manager.png
+    dingo-settings-save-to-file.png
+    dingo-lyrics.png
+    dingo-shuffle.png
+    dingo-subtitle-autosaved.png
+    dingo-subtitle-font-chooser.png
+    -->
+    
+    <div class="fancybox-container">
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-copyright-notice.png" title="Dingo | About Dialog"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-copyright-notice.png" alt="" /></a>
       
-      <!-- Fedora -->      
-      <ul class="thumbs noscript">
-        <li>
-          <a class="thumb" name="dingo-sound-menu-integration.png" href="/static/images/screenshots/scaled/dingo-sound-menu-integration.png" title="Dingo's SoundMenu Integration">
-            <img src="/static/images/screenshots/thumbnails/dingo-sound-menu-integration.png" alt="Dingo's SoundMenu Integration" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-single-track.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-edit-single-track.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-repeat-section.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-repeat-section.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-edit-all-tracks.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-edit-all-tracks.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-video-playback.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-video-playback.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-tracks-membership-manager.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-tracks-membership-manager.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-lyrics.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-lyrics.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-shuffle.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-shuffle.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-settings-save-to-file.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-settings-save-to-file.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-fullscreen-mode.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-fullscreen-mode.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-playlist-manager.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-playlist-manager.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-autosaved.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-autosaved.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-        
-        <li>
-          <a class="thumb" name="optionalCustomIdentifier" href="/static/images/screenshots/scaled/dingo-subtitle-font-chooser.png" title="your image title">
-            <img src="/static/images/screenshots/thumbnails/dingo-subtitle-font-chooser.png" alt="your image title again for graceful degradation" />
-          </a>
-          
-          <div class="caption">
-            (Any html can go here)
-          </div>
-        </li>
-      </ul>
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-video-playback.png" title="Dingo | Video Playback"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-video-playback.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-fullscreen-mode.png" title="Dingo | Fullscreen Mode"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-fullscreen-mode.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-sound-menu-integration.png" title="Dingo | SoundMenu Integration"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-sound-menu-integration.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-tracks-membership-manager.png" title="Dingo | Checkboxes-based Tracks-Playlists Manager"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-tracks-membership-manager.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-repeat-section.png" title="Dingo | Repeat Section"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-repeat-section.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-edit-single-track.png" title="Dingo | Edit Single Track"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-edit-single-track.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-edit-all-tracks.png" title="Dingo | Edit All Tracks"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-edit-all-tracks.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-playlist-manager.png" title="Dingo | Playlist Manager"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-playlist-manager.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-settings-save-to-file.png" title="Dingo | Settings Menu"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-settings-save-to-file.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-lyrics.png" title="Dingo | Lyrics Viewer & Editor"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-lyrics.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-shuffle.png" title="Dingo | Smart Shuffle"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-shuffle.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-subtitle-autosaved.png" title="Dingo | Subtitle Autosave"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-subtitle-autosaved.png" alt="" /></a>
+      
+      <a class="fancybox-ubuntu" rel="ubuntu-screenshots" href="/static/images/screenshots/ubuntu/originals/dingo-subtitle-font-chooser.png" title="Dingo | Subtitle Font Chooser"><img src="/static/images/screenshots/ubuntu/thumbnails/dingo-subtitle-font-chooser.png" alt="" /></a>
+    </div>
+    
+    {# Fedora #}
+    <h3 class="sub-header" id="fedora" style="padding-left: 1px; margin-top: 10px;">
+      Dingo 0.5.1 - Fedora 17 (Beefy Miracle)
+    </h3>
+    
+    <!-- 
+    dingo-copyright-notice.png
+    dingo-video-playback.png
+    dingo-fullscreen-mode.png
+    dingo-miniplayer.png
+    dingo-statusicon-popup-menu.png
+    dingo-tracks-membership-manager.png
+    dingo-repeat-section.png
+    dingo-edit-single-track.png
+    dingo-edit-all-tracks.png
+    dingo-playlist-manager.png
+    dingo-settings-save-to-file.png
+    dingo-lyrics.png
+    dingo-shuffle.png
+    dingo-subtitle-autosaved.png
+    dingo-subtitle-font-chooser.png
+    -->
+    
+    <div class="fancybox-container">
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-copyright-notice.png" title="Dingo | About Dialog"><img src="/static/images/screenshots/fedora/thumbnails/dingo-copyright-notice.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-video-playback.png" title="Dingo | Video Playback"><img src="/static/images/screenshots/fedora/thumbnails/dingo-video-playback.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-fullscreen-mode.png" title="Dingo | Fullscreen Mode"><img src="/static/images/screenshots/fedora/thumbnails/dingo-fullscreen-mode.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-miniplayer.png" title="Dingo | Traybar MiniPlayer"><img src="/static/images/screenshots/fedora/thumbnails/dingo-miniplayer.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-statusicon-popup-menu.png" title="Dingo | Statusicon Popup Menu"><img src="/static/images/screenshots/fedora/thumbnails/dingo-statusicon-popup-menu.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-tracks-membership-manager.png" title="Dingo | Checkboxes-based Tracks-Playlists Manager"><img src="/static/images/screenshots/fedora/thumbnails/dingo-tracks-membership-manager.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-repeat-section.png" title="Dingo | Repeat Section"><img src="/static/images/screenshots/fedora/thumbnails/dingo-repeat-section.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-edit-single-track.png" title="Dingo | Edit Single Track"><img src="/static/images/screenshots/fedora/thumbnails/dingo-edit-single-track.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-edit-all-tracks.png" title="Dingo | Edit All Tracks"><img src="/static/images/screenshots/fedora/thumbnails/dingo-edit-all-tracks.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-playlist-manager.png" title="Dingo | Playlist Manager"><img src="/static/images/screenshots/fedora/thumbnails/dingo-playlist-manager.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-settings-save-to-file.png" title="Dingo | Settings Menu"><img src="/static/images/screenshots/fedora/thumbnails/dingo-settings-save-to-file.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-lyrics.png" title="Dingo | Lyrics Viewer & Editor"><img src="/static/images/screenshots/fedora/thumbnails/dingo-lyrics.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-shuffle.png" title="Dingo | Smart Shuffle"><img src="/static/images/screenshots/fedora/thumbnails/dingo-shuffle.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-subtitle-autosaved.png" title="Dingo | Subtitle Autosave"><img src="/static/images/screenshots/fedora/thumbnails/dingo-subtitle-autosaved.png" alt="" /></a>
+      
+      <a class="fancybox-fedora" rel="fedora-screenshots" href="/static/images/screenshots/fedora/originals/dingo-subtitle-font-chooser.png" title="Dingo | Subtitle Font Chooser"><img src="/static/images/screenshots/fedora/thumbnails/dingo-subtitle-font-chooser.png" alt="" /></a>
     </div>
   </div>
 {% endblock %}

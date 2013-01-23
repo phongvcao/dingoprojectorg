@@ -1,0 +1,36 @@
+GENERAL INFORMATION
+===================
+
+This is dingoprojectorg version 0.5.0. dingoprojectorg is the code base of http://dingo-project.org/, the official website for Dingo Media Manager.
+
+dingoprojectorg is a free and open-source software, licensed under the GNU GPL v3.0. 
+
+dingoprojectorg's libraries, however, retain their original copyright
+
+dingprojectorg is developed using Github. To get a copy of the latest development tree, please go to this web page:
+  https://github.com/phongvcao/dingoprojectorg
+
+dingoprojectorg is written in Python, HTML, CSS, JavaScript and SQL (SQLite) using the following libraries: Django, jQuery, SlidesJS, TinyMCE, SQLite3, fancyBox.
+
+
+INSTALLATION
+============
+
+See the file INSTALL
+
+
+REPORT BUGS
+===========
+
+Bugs can be reported using our Github issues tracker at https://github.com/phongvcao/dingoprojectorg/issues. Please include the following information in your bugs reports:
+- Your operating system name and version (i.e Windows 7 64-bit)
+- Your browser name and version
+- Detailed description (if possible) of the crash.
+- What did you do that led to the crash?
+
+
+DEVELOPMENT
+===========
+
+Please browse and fetch Dingo's source code at the following address:
+- https://github.com/phongvcao/dingoprojectorg

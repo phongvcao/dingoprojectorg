@@ -1,1 +1,31 @@
-- /static should be installed in /public_html
+Installation Instructions
+*************************
+
+Copyright (C) 2013 Phong V. Cao <phongvcao@phongvcao.com>
+
+
+==================
+Basic Installation
+==================
+-------------------------------------------------
+1. First learn how to deploy Django on HostGator:
+-------------------------------------------------
+   
+   * http://roshanbook.wordpress.com/2011/11/08/getting-django-up-and-running-on-hostgator/
+    
+   (If the above link no longer works then please extract the file deploy_django_hostgator.tar.gz)
+
+
+------------------------
+2. Install static files:
+------------------------
+
+   * dingoprojectorg/static/ should be installed in public_html/ folder
+
+
+------------------------------
+3. Deploy configuration files:
+------------------------------
+
+   * files in public_html/ should be installed in public_html/ folder
+

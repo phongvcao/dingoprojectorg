@@ -1,0 +1,10 @@
+RewriteEngine On
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www.dingo-project.org$
+RewriteRule ^(.*)$ http://dingo-project.org/$1 [L,R=301]
+
+AddHandler fcgid-script .fcgi
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.fcgi/$1 [QSA,L]

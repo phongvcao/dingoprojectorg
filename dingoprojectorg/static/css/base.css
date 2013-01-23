@@ -40,6 +40,27 @@ body {
   display: block;
 }
 
+/* noscript */
+#noscript {
+  border-width: 1px;
+  border-color: #bd1212;
+  border-style: solid;
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 980px;
+  padding: 10px 10px 10px 10px;
+  background-color: #ffb2b2;
+  line-height: 25px;
+}
+
+p.noscript {
+  color: #bd1212;
+  text-align: center;
+}
+
 /* Navigation bar */
 #nav-bar-div {
   float: right;

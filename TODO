@@ -1,116 +1,29 @@
-- DONE: Create download_archives.html (YES WE CAN!):
+=======================================================================================
+dingoprojectorg - 2013-01-28
+---------------------------------------------------------------------------------------
+Tasks to be done in next releases
+=======================================================================================
 
-- DONE: Create download_development.html (DONE!)
- 
-- DONE: Create a section called new functionalities for those
-  releases that have micro == 0
 
-- DONE: Go to all *.html files and add the closing "</div>" to 
-  the end of the content section right bfore the {% endblock %} 
-  of {% block content %}
+1. dingoprojectorg 0.5.0 - 2013 - Current Version:
+--------------------------------------------------
   
-- DONE: Make the three boxes at the bottom of home showing pointer 
-  and navigate to pages when clicking
+    - Finish up INSTALL Notes (Add the installation instruction).
 
-- DONE: Homepage slideshow auto-hides forward & backward buttons.
-  When hovering over they appear but a little transparent.
-  
-- DONE: Factor *.html files into relevant folders
+    - Copy the scalable version of dingoprojectorg.svg to dingo's package
 
-- DONE: Resize all images used in download_archives.html
+    - Finish packing packages & upload to all necessary websites
 
-- DONE: Add more dependencies to FAQ
+    - Django Admin interface serving on http://dingo-project.org/
 
-2. Saturday 01/19/13:
-- DONE: Vertically-align Home's slideshow
+    - Edit phongvcao.com - Add shadowing effect
 
-- DONE: Shadow for all pages! (adjust base.css)
-- DONE: Create sitemap at bottom of base.html (like mozilla.org)
-  (Same color and width as the base.html's header - like ubuntu.com)
-  (We should not use table. It is not appropriate structurally
-   and logically and non-CSS. Use ul/li instead)
-
-3. Sunday 01/20/13:
-- DONE: Increase margins of slides_slide in slideshow so that
-  the text won't be too closed to the two sides
-  
-- DONE: Deploy Django & this website on Hostgator.com (first try out
-  their cheapest package & shortest time)
-  
-- DONE: Refactor settings.py and other settings file "from ... 
-  import" statement so that they won't look so messy!
-  
-- DONE: Create "Latest stable release is ... " bar on top of 
-  Download and Archives page
-  
-- DONE: Create 404.html to catch all page_not_found
-  (With a sidebar containing all the "big" directories of the page)
-  (Sorry, the page you are finding does not exist.)
-
-- DONE: Create 505.html to catch all server_error
-
-- DONE: Create favicon
-- DONE: Set-up mailing-list
-  (List Archives: http://dingo-project.org/pipermail/dingo-list_dingo-project.org/)
-  (List URL: http://dingo-project.org/mailman/listinfo/dingo-list_dingo-project.org)
-
-- DONE: Create IDs for all headers in all html files
-- DONE: Edit Dingo's homepage address on SourceForge.net and Github
-
-- DONE: Replace @font-face with Google Web Fonts
-- DONE: Fix "Get Dingo!" ugly appearance in IE 9
-
-4. Monday 01/21/13:
-- DONE: Footer - Increase distance between logo and main sitemap
-        and also between copyright notice and main sitemap.
-
-5. Tuesday 01/22/13:
-- DONE: Create screenshots.html (No need for screenshots_base.html)
+    - Edit all "#" links in .html files to the working ones
+    
 
 
-- DONE: Create about_features.html
-  (Let's go to Fedora and find some more icons)
-  + Organize
-    - Home (Got it!)
-    - Playlists (Got it!)
-    - Play Queue (Got it!)
-    - Shuffle Songs (Got it!)
-  + Filters
-    - Search (Got it!)
-    - Audio Only (Got it!)
-    - Video Only (Got it!)
-  + Edit
-    - Edit Single Track
-    - Edit Multiple Tracks
-    - Edit Lyrics
-  + Playback
-    - Music (Got it!)
-    - Videos (Got it!)
-    - Fullscreen mode (Got it!)
-    - Subtitle (Got it!)
-    - Repeat Mode (Got it!)
-  + Export
-    - Export Settings (Got it!)
-    - Export Playlists (Got it!)
-  + Developers
-    - MPRIS 2.0 D-Bus
-
-
-- Create a folder call "deploy" on the same level with manage.py
-  and put all the necessary deployment files there (.htaccess, etc.)
-
-- Finish packing packages & upload to all necessary websites
-- Edit all "#" links in .html files to the working ones
-
-- Implement Search functionality in "Help" page
-
-- Add Google Analytics <script> and webmaster before releasing.
-- Add <noscript> tag before releasing
-- Finish up INSTALL Notes (Add the installation instruction).
-
-- Django Admin interface on http://dingo-project.org/
-
-- Copy the scalable version of dingoprojectorg.svg to dingo's
-  package
-
-- Implement Ajax
+2. dingoprojectorg 0.5.1 - 2013:
+--------------------------------
+    
+    - Implement Ajax
+    

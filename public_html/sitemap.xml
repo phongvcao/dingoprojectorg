@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://dingo-project.org/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/about/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/about/contact/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/about/features/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/about/license/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/screenshots/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/download/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/download/archives/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/download/archives/0.5.1/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/download/archives/0.5.0/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/download/development/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/contribute/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/contribute/report-bugs/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/contribute/translate/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/contribute/design-icons/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/contribute/write-code/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/help/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/help/faq/</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/mailman/listinfo/dingo-list_dingo-project.org</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/mailman/admin/dingo-list_dingo-project.org</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/mailman/listinfo</loc>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>http://dingo-project.org/mailman/admin</loc>
+  <changefreq>weekly</changefreq>
+</url>
+</urlset>

@@ -26,12 +26,14 @@
     
     <br />
     
-    <p class="text-content">
-      <span style="font-weight:500;">Subscribe to dingo-list:</span>
-      <br />
-      <input type="text" style="width:275px;" name="email" value="your_email@address.com" onclick="this.select();" class="text-content" />
-      <input type="submit" name="email-button" value="Subscribe" />
-    </p>
+    <form method="post" action="http://dingo-project.org/mailman/subscribe/dingo-list_dingo-project.org">
+      <p class="text-content">
+        <span style="font-weight:500;">Subscribe to dingo-list:</span>
+        <br />
+        <input type="text" style="width:275px;" name="email" value="your_email@address.com" onclick="this.select();" class="text-content" />
+        <input type="submit" name="email-button" value="Subscribe" onclick="this.form.target='_blank';return true;"/>
+      </p>
+    </form>
     
     <br />
     

@@ -67,26 +67,31 @@
 5. Tuesday 01/22/13:
 - DONE: Create screenshots.html (No need for screenshots_base.html)
 
-- Create about_features.html
+
+- DONE: Create about_features.html
+  (Let's go to Fedora and find some more icons)
   + Organize
-    - Home
-    - Playlists
-    - Play Queue
-    - Shuffle Songs
+    - Home (Got it!)
+    - Playlists (Got it!)
+    - Play Queue (Got it!)
+    - Shuffle Songs (Got it!)
   + Filters
-    - Search
-    - Music
-    - Videos
+    - Search (Got it!)
+    - Audio Only (Got it!)
+    - Video Only (Got it!)
   + Edit
     - Edit Single Track
     - Edit Multiple Tracks
     - Edit Lyrics
   + Playback
-    - Audio Playback
-    - Video Playback
-    - Fullscreen mode
-    - Subtitle
-    - Repeat Mode
+    - Music (Got it!)
+    - Videos (Got it!)
+    - Fullscreen mode (Got it!)
+    - Subtitle (Got it!)
+    - Repeat Mode (Got it!)
+  + Export
+    - Export Settings (Got it!)
+    - Export Playlists (Got it!)
   + Developers
     - MPRIS 2.0 D-Bus
 
@@ -100,6 +105,7 @@
 - Implement Search functionality in "Help" page
 
 - Add Google Analytics <script> and webmaster before releasing.
+- Add <noscript> tag before releasing
 - Finish up INSTALL Notes (Add the installation instruction).
 
 - Django Admin interface on http://dingo-project.org/

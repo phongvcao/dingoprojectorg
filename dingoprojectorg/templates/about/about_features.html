@@ -2,32 +2,34 @@
 
 {% block title %}Dingo &rsaquo;&rsaquo; Features{% endblock %}
 
-{% block libs %}{% endblock %}
+{% block libs %}
+  <link rel="stylesheet" type="text/css" href="/static/css/about_features.css" />
+{% endblock %}
 
 {% block content %}
   <div id="content">
   <!--
   + Organize
-    - Home
-    - Playlists
-    - Play Queue
-    - Shuffle Songs
+    - Home (Got it!)  //
+    - Playlists (Got it!)  //
+    - Play Queue (Got it!)  //
+    - Shuffle Songs (Got it!)
   + Filters
-    - Search
-    - Audio Only
-    - Video Only
-  + Edit
-    - Edit Single Track
-    - Edit Multiple Tracks
-    - Edit Lyrics
+    - Search (Got it!)  //
+    - Audio Only (Got it!)  //
+    - Video Only (Got it!)  //
   + Playback
-    - Audio Playback
-    - Video Playback
-    - Fullscreen mode
-    - Subtitle
-    - Repeat Mode
+    - Music (Got it!)  //
+    - Videos (Got it!)  //
+    - Fullscreen mode (Got it!)  //
+    - Subtitle (Got it!)  //
+    - Repeat Mode (Got it!)  //
+    - Lyrics  //
+  + Export
+    - Export Settings (Got it!)  //
+    - Export Playlists (Got it!)  //
   + Developers
-    - MPRIS 2.0 D-Bus
+    - MPRIS 2.0 D-Bus  //
   -->
   
     {# Organize #}
@@ -36,17 +38,17 @@
     </h3>
     
     <dl class="features">
-      <dt>Home</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-home.png" alt="" />Home</dt>
+      <dd class="features-definition">Control and view information of all tracks through a simple yet easy-to-use interface</dd>
       
-      <dt>Playlists</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-playlists.png" alt="" />Playlists</dt>
+      <dd class="features-definition">Divide your tracks into playlists using our checkboxes-based tracks-playlists manager</dd>
       
-      <dt>Play Queue</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-play-queue.png" alt="" />Play Queue</dt>
+      <dd class="features-definition">Queue tracks and let Dingo automatically play them for you</dd>
       
-      <dt>Shuffle</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-shuffle.png" alt="" />Shuffle</dt>
+      <dd class="features-definition">Get rid of boredom by letting Dingo play your songs randomly</dd>
     </dl>
     
     {# Filters #}
@@ -55,30 +57,14 @@
     </h3>
     
     <dl class="features">
-      <dt>Search</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-search.png" alt="" />Search</dt>
+      <dd class="features-definition">Search the whole database, the whole playlist or just a view to find what you want</dd>
       
-      <dt>Audio Only</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-audio-only.png" alt="" />Audio Only</dt>
+      <dd class="features-definition">Show and play only audios</dd>
       
-      <dt>Video Only</dt>
-      <dd></dd>
-    </dl>
-    
-    {# Edit #}
-    <h3 class="sub-header" id="history">
-      Edit
-    </h3>
-    
-    <dl class="features">
-      <dt>Edit Single Track</dt>
-      <dd></dd>
-      
-      <dt>Edit Multiple Tracks</dt>
-      <dd></dd>
-      
-      <dt>Edit Lyrics</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-video-only.png" alt="" />Video Only</dt>
+      <dd class="features-definition">Show and play only videos</dd>
     </dl>
     
     {# Playback #}
@@ -87,20 +73,36 @@
     </h3>
     
     <dl class="features">
-      <dt>Music</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-music.png" alt="" />Music</dt>
+      <dd class="features-definition">Dingo is able to recognize, import and play many different audio formats (mp3, aac, ogg, etc...) thanks to its GStreamer-based engine.</dd>
       
-      <dt>Videos</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-videos.png" alt="" />Videos</dt>
+      <dd class="features-definition">Dingo is able to recognize, import and play many different video formats (avi, mpeg, mkv, etc...) thanks to its GStreamer-based engine.</dd>
       
-      <dt>Fullscreen</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-fullscreen.png" alt="" />Fullscreen</dt>
+      <dd class="features-definition">Expand your videos to fullscreen to maximize your experience.</dd>
       
-      <dt>Subtitle</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-subtitle.png" alt="" />Subtitle</dt>
+      <dd class="features-definition">Improve your movie-watching experience using our subtitle engine: import subtitle, autosave subtitle and choose its format</dd>
       
-      <dt>Repeat Modes</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-repeat-modes.png" alt="" />Repeat Modes</dt>
+      <dd class="features-definition">Dingo has four repeat modes that can suit all of your needs: Repeat Off, Repeat Playlist, Repeat Single, Repeat Section (our special and unique one!).</dd>
+      
+      <dt class="features-name"><img src="/static/images/about/features/features-lyrics.png" alt="" />Edit Lyrics</dt>
+      <dd class="features-definition">Dingo supports fetching and saving lyrics to files. You will no longer have to open your browser for lyrics-lookup while listening to your favorite pieces.</dd>
+    </dl>
+    
+    {# Export #}
+    <h3 class="sub-header" id="history">
+      Export
+    </h3>
+    
+    <dl class="features">
+      <dt class="features-name"><img src="/static/images/about/features/features-export-settings.png" alt="" />Export Settings</dt>
+      <dd class="features-definition">Dingo's settings are exportable, which makes it easier for you to backup and restore your preferred configurations.</dd>
+      
+      <dt class="features-name"><img src="/static/images/about/features/features-export-playlists.png" alt="" />Export Playlists</dt>
+      <dd class="features-definition">Playlists can also be exported, and importing them is faster than importing the media files again.</dd>
     </dl>
     
     {# For Developers #}
@@ -109,67 +111,8 @@
     </h3>
     
     <dl class="features">
-      <dt>MPRIS v2.0 D-Bus Interface</dt>
-      <dd></dd>
+      <dt class="features-name"><img src="/static/images/about/features/features-mpris-v2.png" alt="" />MPRIS v2.0 D-Bus Interface</dt>
+      <dd class="features-definition" style="margin-bottom:-10px;">Control Dingo using the MPRIS D-Bus interface</dd>
     </dl>
-    
-    <!-- the shits below are for reference -->
-  
-    {# History #}
-    <h3 class="sub-header" id="history">
-      History
-    </h3>
-  
-    <p class="text-content">
-      Dingo was originally developed and released in 2012 by <a href="http://www.phongvcao.com/" target="_blank" class="doc-link">Phong V. Cao</a>, an undergraduate college student at Stony Brook University. The software was created with the solely purpose of helping Linux users manage and enjoy their audios and videos collections in a simple yet effective way.
-    </p>
-  
-    {# Technical Summary #}
-    <h3 class="sub-header" id="technical-summary">
-      Technical Summary
-    </h3>
-  
-    <p class="text-content">
-      Dingo is written in C/C++ using <a href="http://www.gnome.org/" target="_blank" class="doc-link">GNOME</a> technologies (<a href="http://www.gtkmm.org/en/download.html" target="_blank" class="doc-link">Gtkmm</a>, <a href="http://developer.gnome.org/gstreamermm/0.10/" target="_blank" class="doc-link">GStreamermm</a>, <a href="http://libxmlplusplus.sourceforge.net/" target="_blank" class="doc-link">libxml++</a>, <a href="http://developer-next.gnome.org/libnotify/" target="_blank" class="doc-link">libnotify</a>, <a href="http://www.gnu.org/software/gettext/" target="_blank" class="doc-link">gettext</a>). It takes advantage of other non-GNOME open-source libraries (<a href="http://www.boost.org/" target="_blank" class="doc-link">Boost</a>, <a href="http://mediainfo.sourceforge.net/en" target="_blank" class="doc-link">MediaInfo</a>, <a href="http://www.sqlite.org/" target="_blank" class="doc-link">SQLite3</a>) and applies various design patterns such as <a href="http://en.wikipedia.org/wiki/Observer_pattern" target="_blank" class="doc-link">Observer</a>, <a href="http://en.wikipedia.org/wiki/Delegation_pattern" target="_blank" class="doc-link">Delegation</a>, <a href="http://en.wikipedia.org/wiki/Facade_pattern" target="_blank" class="doc-link">Facade</a> and <a href="http://c2.com/cgi/wiki?ModelDelegate" target="_blank" class="doc-link">Model-Delegate</a>, a variation of the <a href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller" target="_blank" class="doc-link">Model-View-Controller (MVC) pattern</a>. Dingo is <a href="http://www.gnu.org/philosophy/free-sw.html" target="_blank" class="doc-link">free/open-source software</a>, <a href="http://www.gnu.org/licenses/gpl.html" target="_blank" class="doc-link">released under the GNU General Public License v3.0</a>.
-    </p>
-  
-    {# Contributors List #}
-    <h3 class="sub-header" id="contributors-list">
-      Contributors List
-    </h3>
-  
-    <p class="text-content">
-      Just like many other open-source software, Dingo was created and maintained by the effort of not only the author but many volunteers, including developers, designers, translators and users. The following section was created to recognize their contributions to the project.
-    </p>
-  
-    <br />
-   
-    <p class="text-content-intro">
-      1. The following people contributed either directly through source code or through emails answering questions of the author. Without them there would be no release!
-    </p>
-  
-    <p class="text-content-body">
-      <a href="http://www.murrayc.com/" target="_blank" class="doc-link">Murray Cumming</a>, Kjell Ahlstedt, <a href="http://mediainfo.sourceforge.net/en" target="_blank" class="doc-link">Jerome Martinez</a>, <a href="http://www.sqlite.org/crew.html" target="_blank" class="doc-link">Dan Kennedy</a>
-    </p>
-  
-    <br />
-  
-    <p class="text-content-intro">
-      2. The following people contributed updated translations to this release. Without them, our project's reach would be much more limited!
-    </p>
-  
-    <p class="text-content-body">
-      <a href="http://www.phongvcao.com/" target="_blank" class="doc-link">Phong V. Cao</a>, Khanh D. Cao, Khoa D. Cao
-    </p>
-  
-    <br />
-    
-    <p class="text-content-intro">
-      3. The following people contributed to the project through designing icons/images/logos for the project. Without them, our project would look terrible!
-    </p>
-  
-    <p class="text-content-body">
-      <a href="http://www.customicondesign.com/" target="_blank" class="doc-link">Custom Icon Design Team</a>, Andreas Nilsson, Garrett LeSage, Jakub Steiner, K. Vishnoo Charan Reddy, Michael Monreal, Ryan Collier, <a href="http://projects.gnome.org/rhythmbox/" target="_blank" class="doc-link">Rhythmbox Icon Design Team</a>
-    </p>
   </div>
 {% endblock %}

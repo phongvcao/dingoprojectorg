@@ -8,17 +8,18 @@ Tasks to be done in next releases
 1. dingoprojectorg 0.5.0 - 2013 - Current Version:
 --------------------------------------------------
   
-    - Finish up INSTALL Notes (Add the installation instruction).
+    - DONE: Finish up INSTALL Notes (Add the installation instruction).
 
-    - Copy the scalable version of dingoprojectorg.svg to dingo's package
+    - DONE: Finish packing packages & upload to all necessary websites
 
-    - Finish packing packages & upload to all necessary websites
+    - (Waiting for Ubuntu Review) Edit all "#" links in .html files to the working ones
 
     - Django Admin interface serving on http://dingo-project.org/
 
-    - Edit phongvcao.com - Add shadowing effect
-
-    - Edit all "#" links in .html files to the working ones
+    - Edit phongvcao.com - Add shadowing effect 
+      Also turn phongvcao.com to a Python/Django project
+    
+    - Prepare to release http://dingo-project.org on Facebook.
     
 
 

@@ -4,14 +4,11 @@ dingoprojectorg - 2013-01-28
 Tasks to be done in next releases
 =======================================================================================
 
+    * REMEMBER: git rm $(git ls-files --deleted)
 
 1. dingoprojectorg 0.5.0 - 2013 - Current Version:
 --------------------------------------------------
-  
-    - DONE: Finish up INSTALL Notes (Add the installation instruction).
-
-    - DONE: Finish packing packages & upload to all necessary websites
-
+    
     - (Waiting for Ubuntu Review) Edit all "#" links in .html files to the working ones
 
     - Django Admin interface serving on http://dingo-project.org/

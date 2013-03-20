@@ -70,7 +70,6 @@ import os
 
 # Additional locations of static files
 STATICFILES_DIRS = (
-    HOME_DIR + '/django/django/contrib/admin/static/admin',
     os.path.join(os.path.realpath(os.path.dirname(__file__)), 'static'),
     HOME_DIR + '/dingoprojectorg/dingoprojectorg/static',
     HOME_DIR + '/dingoprojectorg/dingoprojectorg/static/admin',

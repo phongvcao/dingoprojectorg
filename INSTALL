@@ -21,6 +21,11 @@ Basic Installation
 ------------------------
 
    * dingoprojectorg/static/ should be installed in public_html/ folder
+   
+   * django/django/contrib/admin/static/admin should be installed in 
+     public_html/static folder
+     
+     (the subfolders css/, img/, js/ must be maintained)
 
 
 ------------------------------

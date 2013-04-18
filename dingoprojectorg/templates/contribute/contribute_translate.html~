@@ -24,7 +24,7 @@
     <br />
     
     <p class="text-content">
-      If possible, you should <span style="font-weight:400;">contact the existing translators or translation team of the language you want to work on</span> (their email addresses are noted in <a href="https://github.com/phongvcao/dingo/tree/master/po" target="_blank" class="doc-link">the po files</a>) <span style="font-weight:400;">to avoid duplicates and conflicts during the translation process</span>.
+      If possible, you should <span style="font-weight:400;">contact the existing translators or translation team of the language you want to work on</span> (their email addresses are noted in <a href="https://github.com/phongvcao/dingo/tree/master/po" target="_blank" class="doc-link">the po files</a>) <span style="font-weight:400;">to avoid duplicates and conflicts during the translation process</strong>.
     </p>      
     
     <br /> 
